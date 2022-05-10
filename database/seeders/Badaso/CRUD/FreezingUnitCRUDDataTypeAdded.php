@@ -6,7 +6,7 @@ use Illuminate\Database\Seeder;
 use Uasoft\Badaso\Facades\Badaso;
 use Uasoft\Badaso\Models\MenuItem;
 
-class StorageCRUDDataTypeAdded extends Seeder
+class FreezingUnitCRUDDataTypeAdded extends Seeder
 {
     /**
      * Auto generated seed file
@@ -21,18 +21,17 @@ class StorageCRUDDataTypeAdded extends Seeder
 
         try {
 
-            $data_type = Badaso::model('DataType')->where('name', 'storage')->first();
+            $data_type = Badaso::model('DataType')->where('name', 'freezing_unit')->first();
 
             if ($data_type) {
-                Badaso::model('DataType')->where('name', 'storage')->delete();
+                Badaso::model('DataType')->where('name', 'freezing_unit')->delete();
             }
 
             \DB::table('badaso_data_types')->insert(array (
-                'id' => 5,
-                'name' => 'storage',
-                'slug' => 'storage',
-                'display_name_singular' => 'Storage',
-                'display_name_plural' => 'Storage',
+                'name' => 'freezing_unit',
+                'slug' => 'freezing-unit',
+                'display_name_singular' => 'Freezing Unit',
+                'display_name_plural' => 'Freezing Unit',
                 'icon' => NULL,
                 'model_name' => NULL,
                 'policy_name' => NULL,
@@ -42,46 +41,46 @@ class StorageCRUDDataTypeAdded extends Seeder
                 'order_direction' => NULL,
                 'generate_permissions' => true,
                 'server_side' => false,
-                'is_maintenance' => 0,
                 'description' => NULL,
                 'details' => NULL,
                 'notification' => '[]',
                 'is_soft_delete' => false,
-                'created_at' => '2022-05-10T04:30:26.000000Z',
-                'updated_at' => '2022-05-10T05:20:41.000000Z',
+                'updated_at' => '2022-05-10T05:17:55.000000Z',
+                'created_at' => '2022-05-10T05:17:55.000000Z',
+                'id' => 8,
             ));
 
-            Badaso::model('Permission')->generateFor('storage');
+            Badaso::model('Permission')->generateFor('freezing_unit');
 
             $menu = Badaso::model('Menu')->where('key', config('badaso.default_menu'))->firstOrFail();
 
             $menu_item = Badaso::model('MenuItem')
                 ->where('menu_id', $menu->id)
-                ->where('url', '/general/storage')
+                ->where('url', '/general/freezing-unit')
                 ->first();
 
             $order = Badaso::model('MenuItem')->highestOrderMenuItem($menu->id);
 
             if (!is_null($menu_item)) {
                 $menu_item->fill([
-                    'title' => 'Storage',
+                    'title' => 'Freezing Unit',
                     'target' => '_self',
                     'icon_class' => '',
                     'color' => null,
                     'parent_id' => null,
-                    'permissions' => 'browse_storage',
+                    'permissions' => 'browse_freezing_unit',
                     'order' => $order,
                 ])->save();
             } else {
                 $menu_item = new MenuItem();
                 $menu_item->menu_id = $menu->id;
-                $menu_item->url = '/general/storage';
-                $menu_item->title = 'Storage';
+                $menu_item->url = '/general/freezing-unit';
+                $menu_item->title = 'Freezing Unit';
                 $menu_item->target = '_self';
                 $menu_item->icon_class = '';
                 $menu_item->color = null;
                 $menu_item->parent_id = null;
-                $menu_item->permissions = 'browse_storage';
+                $menu_item->permissions = 'browse_freezing_unit';
                 $menu_item->order = $order;
                 $menu_item->save();
             }

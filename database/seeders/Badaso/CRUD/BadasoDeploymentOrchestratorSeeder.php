@@ -28,5 +28,17 @@ class BadasoDeploymentOrchestratorSeeder extends Seeder
         $this->seed(ProdukCRUDDataRowAdded::class);
         $this->seed(StorageCRUDDataTypeAdded::class);
         $this->seed(StorageCRUDDataRowAdded::class);
+        $this->seed(ColdStorageCRUDDataTypeAdded::class);
+        $this->seed(ColdStorageCRUDDataRowAdded::class);
+        $this->seed(DenahCRUDDataTypeAdded::class);
+        $this->seed(DenahCRUDDataRowAdded::class);
+        $this->seed(FreezingUnitCRUDDataTypeAdded::class);
+        $this->seed(FreezingUnitCRUDDataRowAdded::class);
+        $this->seed(KelasCRUDDataTypeAdded::class);
+        $this->seed(KelasCRUDDataRowAdded::class);
+        $this->seed(MetalDetectorCRUDDataTypeAdded::class);
+        $this->seed(MetalDetectorCRUDDataRowAdded::class);
+        $this->seed(SupplierCRUDDataTypeAdded::class);
+        $this->seed(SupplierCRUDDataRowAdded::class);
     }
 }

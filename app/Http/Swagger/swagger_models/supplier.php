@@ -2,11 +2,11 @@
 
 /**
   * @OA\Get(
-  *      path="/v1/entities/storage",
-  *      operationId="browseStorage",
-  *      tags={"storage"},
-  *      summary="Browse Storage",
-  *      description="Returns list of Storage",
+  *      path="/v1/entities/supplier",
+  *      operationId="browseSupplier",
+  *      tags={"supplier"},
+  *      summary="Browse Supplier",
+  *      description="Returns list of Supplier",
   *      @OA\Response(response=200, description="Successful operation"),
   *      @OA\Response(response=400, description="Bad request"),
   *      @OA\Response(response=401, description="Unauthorized"),
@@ -20,11 +20,11 @@
 
 /**
   * @OA\Get(
-  *      path="/v1/entities/storage/read?slug=storage&id={id}",
-  *      operationId="readStorage",
-  *      tags={"storage"},
-  *      summary="Get Storage based on id",
-  *      description="Returns Storage based on id",
+  *      path="/v1/entities/supplier/read?slug=supplier&id={id}",
+  *      operationId="readSupplier",
+  *      tags={"supplier"},
+  *      summary="Get Supplier based on id",
+  *      description="Returns Supplier based on id",
   *      @OA\Parameter(
   *          name="id",
   *          required=true,
@@ -46,11 +46,11 @@
 
 /**
   * @OA\Post(
-  *      path="/v1/entities/storage/add",
-  *      operationId="addStorage",
-  *      tags={"storage"},
-  *      summary="Insert new Storage",
-  *      description="Insert new Storage into database",
+  *      path="/v1/entities/supplier/add",
+  *      operationId="addSupplier",
+  *      tags={"supplier"},
+  *      summary="Insert new Supplier",
+  *      description="Insert new Supplier into database",
   *      @OA\RequestBody(
   *         @OA\MediaType(
   *             mediaType="application/json",
@@ -58,7 +58,7 @@
   *                 @OA\Property(
   *                     property="data",
   *                     type="object",
-  *                     example={"tanggal":"Abc", "idColdStorage":"", "idProses":"Abc", "idRak":"", "kwantitas":"123", "status":"Abc"},
+  *                     example={"namaSupplier":"Abc", "daerahOperasi":"Abc", "alamat":"Abc"},
   *                 ),
   *             )
   *         )
@@ -76,11 +76,11 @@
 
 /**
   * @OA\Put(
-  *      path="/v1/entities/storage/edit",
-  *      operationId="editStorage",
-  *      tags={"storage"},
-  *      summary="Edit an existing Storage",
-  *      description="Edit an existing Storage",
+  *      path="/v1/entities/supplier/edit",
+  *      operationId="editSupplier",
+  *      tags={"supplier"},
+  *      summary="Edit an existing Supplier",
+  *      description="Edit an existing Supplier",
   *      @OA\RequestBody(
   *         @OA\MediaType(
   *             mediaType="application/json",
@@ -88,7 +88,7 @@
   *                 @OA\Property(
   *                     property="data",
   *                     type="object",
-  *                     example={"tanggal":"Abc", "idColdStorage":"", "idProses":"Abc", "idRak":"", "kwantitas":"123", "status":"Abc"},
+  *                     example={"namaSupplier":"Abc", "daerahOperasi":"Abc", "alamat":"Abc"},
   *                ),
   *             )
   *         )
@@ -106,18 +106,18 @@
 
 /**
   * @OA\Delete(
-  *      path="/v1/entities/storage/delete",
-  *      operationId="deleteStorage",
-  *      tags={"storage"},
-  *      summary="Delete one record of Storage",
-  *      description="Delete one record of Storage",
+  *      path="/v1/entities/supplier/delete",
+  *      operationId="deleteSupplier",
+  *      tags={"supplier"},
+  *      summary="Delete one record of Supplier",
+  *      description="Delete one record of Supplier",
   *      @OA\RequestBody(
   *         @OA\MediaType(
   *             mediaType="application/json",
   *             @OA\Schema(
   *                 @OA\Property(
   *                     property="slug",
-  *                     example="storage",
+  *                     example="supplier",
   *                     type="string"
   *                 ),
   *                 @OA\Property(
@@ -145,18 +145,18 @@
 
 /**
   * @OA\Delete(
-  *      path="/v1/entities/storage/delete-multiple",
-  *      operationId="deleteMultipleStorage",
-  *      tags={"storage"},
-  *      summary="Delete multiple record of Storage",
-  *      description="Delete multiple record of Storage",
+  *      path="/v1/entities/supplier/delete-multiple",
+  *      operationId="deleteMultipleSupplier",
+  *      tags={"supplier"},
+  *      summary="Delete multiple record of Supplier",
+  *      description="Delete multiple record of Supplier",
   *      @OA\RequestBody(
   *         @OA\MediaType(
   *             mediaType="application/json",
   *             @OA\Schema(
   *                 @OA\Property(
   *                     property="slug",
-  *                     example="storage",
+  *                     example="supplier",
   *                     type="string"
   *                 ),
   *                 @OA\Property(
@@ -184,33 +184,30 @@
 
 /**
   * @OA\Put(
-  *      path="/v1/entities/storage/sort",
-  *      operationId="sortStorage",
-  *      tags={"storage"},
-  *      summary="Sort existing Storage",
-  *      description="Sort existing Storage",
+  *      path="/v1/entities/supplier/sort",
+  *      operationId="sortSupplier",
+  *      tags={"supplier"},
+  *      summary="Sort existing Supplier",
+  *      description="Sort existing Supplier",
   *      @OA\RequestBody(
   *         @OA\MediaType(
   *             mediaType="application/json",
   *             @OA\Schema(
   *                 @OA\Property(
   *                     property="slug",
-  *                     example="storage",
+  *                     example="supplier",
   *                     type="string"
   *                 ),
   *                 @OA\Property(
   *                     property="data",
   *                     type="array",
-  *                     example={{"id":"123", "tanggal":"Abc", "idColdStorage":"", "idProses":"Abc", "idRak":"", "kwantitas":"123", "status":"Abc", "createdAt":"2021-01-01T00:00:00.000Z", "updatedAt":"2021-01-01T00:00:00.000Z"}, {"id":"123", "tanggal":"Abc", "idColdStorage":"", "idProses":"Abc", "idRak":"", "kwantitas":"123", "status":"Abc", "createdAt":"2021-01-01T00:00:00.000Z", "updatedAt":"2021-01-01T00:00:00.000Z"}},
+  *                     example={{"id":"123", "namaSupplier":"Abc", "daerahOperasi":"Abc", "alamat":"Abc", "createdAt":"2021-01-01T00:00:00.000Z", "updatedAt":"2021-01-01T00:00:00.000Z"}, {"id":"123", "namaSupplier":"Abc", "daerahOperasi":"Abc", "alamat":"Abc", "createdAt":"2021-01-01T00:00:00.000Z", "updatedAt":"2021-01-01T00:00:00.000Z"}},
   *                     @OA\Items(
   *                         type="object",
   *                         @OA\Property(type="integer", property="id"), 
-  *                         @OA\Property(type="string", property="tanggal"), 
-  *                         @OA\Property(type="string", property="idColdStorage"), 
-  *                         @OA\Property(type="string", property="idProses"), 
-  *                         @OA\Property(type="string", property="idRak"), 
-  *                         @OA\Property(type="integer", property="kwantitas"), 
-  *                         @OA\Property(type="string", property="status"), 
+  *                         @OA\Property(type="string", property="namaSupplier"), 
+  *                         @OA\Property(type="string", property="daerahOperasi"), 
+  *                         @OA\Property(type="string", property="alamat"), 
   *                         @OA\Property(type="string", property="createdAt"), 
   *                         @OA\Property(type="string", property="updatedAt"),
   *                     ),
