@@ -5,7 +5,7 @@ namespace Database\Seeders\Badaso\CRUD;
 use Illuminate\Database\Seeder;
 use Uasoft\Badaso\Facades\Badaso;
 
-class StorageCRUDDataRowAdded extends Seeder
+class PencucianCRUDDataRowAdded extends Seeder
 {
     /**
      * Auto generated seed file
@@ -20,7 +20,7 @@ class StorageCRUDDataRowAdded extends Seeder
 
         try {
 
-            $data_type = Badaso::model('DataType')::where('name', 'storage')->first();
+            $data_type = Badaso::model('DataType')::where('name', 'pencucian')->first();
 
             \DB::table('badaso_data_rows')->insert(array (
                 0 => 
@@ -42,9 +42,9 @@ class StorageCRUDDataRowAdded extends Seeder
                 1 => 
                 array (
                     'data_type_id' => $data_type->id,
-                    'field' => 'tanggal',
-                    'type' => 'date',
-                    'display_name' => 'Tanggal',
+                    'field' => 'pencucian_ke',
+                    'type' => 'number',
+                    'display_name' => 'Pencucian Ke',
                     'required' => 1,
                     'browse' => 1,
                     'read' => 1,
@@ -58,57 +58,9 @@ class StorageCRUDDataRowAdded extends Seeder
                 2 => 
                 array (
                     'data_type_id' => $data_type->id,
-                    'field' => 'id_cold_storage',
-                    'type' => 'relation',
-                    'display_name' => 'Id Cold Storage',
-                    'required' => 1,
-                    'browse' => 1,
-                    'read' => 1,
-                    'edit' => 1,
-                    'add' => 1,
-                    'delete' => 1,
-                    'details' => '{}',
-                    'relation' => '{"relation_type":"belongs_to","destination_table":"cold_storage","destination_table_column":"id","destination_table_display_column":"nama_cold_storage"}',
-                    'order' => 3,
-                ),
-                3 => 
-                array (
-                    'data_type_id' => $data_type->id,
-                    'field' => 'id_proses',
-                    'type' => 'relation',
-                    'display_name' => 'Id Proses',
-                    'required' => 1,
-                    'browse' => 1,
-                    'read' => 1,
-                    'edit' => 1,
-                    'add' => 1,
-                    'delete' => 1,
-                    'details' => '{}',
-                    'relation' => '{"relation_type":"belongs_to","destination_table":"proses","destination_table_column":"id","destination_table_display_column":"tanggal"}',
-                    'order' => 4,
-                ),
-                4 => 
-                array (
-                    'data_type_id' => $data_type->id,
-                    'field' => 'id_rak',
-                    'type' => 'relation',
-                    'display_name' => 'Id Rak',
-                    'required' => 1,
-                    'browse' => 1,
-                    'read' => 1,
-                    'edit' => 1,
-                    'add' => 1,
-                    'delete' => 1,
-                    'details' => '{}',
-                    'relation' => '{"relation_type":"belongs_to","destination_table":"rak","destination_table_column":"id","destination_table_display_column":"nama_rak"}',
-                    'order' => 5,
-                ),
-                5 => 
-                array (
-                    'data_type_id' => $data_type->id,
-                    'field' => 'kwantitas',
-                    'type' => 'number',
-                    'display_name' => 'Kwantitas',
+                    'field' => 'tanggal_jam',
+                    'type' => 'datetime',
+                    'display_name' => 'Tanggal Jam',
                     'required' => 1,
                     'browse' => 1,
                     'read' => 1,
@@ -117,14 +69,62 @@ class StorageCRUDDataRowAdded extends Seeder
                     'delete' => 1,
                     'details' => '{}',
                     'relation' => NULL,
+                    'order' => 3,
+                ),
+                3 => 
+                array (
+                    'data_type_id' => $data_type->id,
+                    'field' => 'suhu',
+                    'type' => 'number',
+                    'display_name' => 'Suhu',
+                    'required' => 1,
+                    'browse' => 1,
+                    'read' => 1,
+                    'edit' => 1,
+                    'add' => 1,
+                    'delete' => 1,
+                    'details' => '{}',
+                    'relation' => NULL,
+                    'order' => 4,
+                ),
+                4 => 
+                array (
+                    'data_type_id' => $data_type->id,
+                    'field' => 'acon',
+                    'type' => 'text',
+                    'display_name' => 'Acon',
+                    'required' => 1,
+                    'browse' => 1,
+                    'read' => 1,
+                    'edit' => 1,
+                    'add' => 1,
+                    'delete' => 1,
+                    'details' => '{}',
+                    'relation' => NULL,
+                    'order' => 5,
+                ),
+                5 => 
+                array (
+                    'data_type_id' => $data_type->id,
+                    'field' => 'id_pegawai',
+                    'type' => 'relation',
+                    'display_name' => 'Id Pegawai',
+                    'required' => 1,
+                    'browse' => 1,
+                    'read' => 1,
+                    'edit' => 1,
+                    'add' => 1,
+                    'delete' => 1,
+                    'details' => '{}',
+                    'relation' => '{"relation_type":"belongs_to","destination_table":"pegawai","destination_table_column":"id","destination_table_display_column":"nama_pegawai"}',
                     'order' => 6,
                 ),
                 6 => 
                 array (
                     'data_type_id' => $data_type->id,
-                    'field' => 'status',
+                    'field' => 'catatan',
                     'type' => 'text',
-                    'display_name' => 'Status',
+                    'display_name' => 'Catatan',
                     'required' => 1,
                     'browse' => 1,
                     'read' => 1,

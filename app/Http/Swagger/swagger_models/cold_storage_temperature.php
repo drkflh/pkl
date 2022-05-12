@@ -2,11 +2,11 @@
 
 /**
   * @OA\Get(
-  *      path="/v1/entities/storage",
-  *      operationId="browseStorage",
-  *      tags={"storage"},
-  *      summary="Browse Storage",
-  *      description="Returns list of Storage",
+  *      path="/v1/entities/cold-storage-temperature",
+  *      operationId="browseColdStorageTemperature",
+  *      tags={"cold-storage-temperature"},
+  *      summary="Browse Cold Storage Temperature",
+  *      description="Returns list of Cold Storage Temperature",
   *      @OA\Response(response=200, description="Successful operation"),
   *      @OA\Response(response=400, description="Bad request"),
   *      @OA\Response(response=401, description="Unauthorized"),
@@ -20,11 +20,11 @@
 
 /**
   * @OA\Get(
-  *      path="/v1/entities/storage/read?slug=storage&id={id}",
-  *      operationId="readStorage",
-  *      tags={"storage"},
-  *      summary="Get Storage based on id",
-  *      description="Returns Storage based on id",
+  *      path="/v1/entities/cold-storage-temperature/read?slug=cold-storage-temperature&id={id}",
+  *      operationId="readColdStorageTemperature",
+  *      tags={"cold-storage-temperature"},
+  *      summary="Get Cold Storage Temperature based on id",
+  *      description="Returns Cold Storage Temperature based on id",
   *      @OA\Parameter(
   *          name="id",
   *          required=true,
@@ -46,11 +46,11 @@
 
 /**
   * @OA\Post(
-  *      path="/v1/entities/storage/add",
-  *      operationId="addStorage",
-  *      tags={"storage"},
-  *      summary="Insert new Storage",
-  *      description="Insert new Storage into database",
+  *      path="/v1/entities/cold-storage-temperature/add",
+  *      operationId="addColdStorageTemperature",
+  *      tags={"cold-storage-temperature"},
+  *      summary="Insert new Cold Storage Temperature",
+  *      description="Insert new Cold Storage Temperature into database",
   *      @OA\RequestBody(
   *         @OA\MediaType(
   *             mediaType="application/json",
@@ -58,7 +58,7 @@
   *                 @OA\Property(
   *                     property="data",
   *                     type="object",
-  *                     example={"tanggal":"Abc", "idColdStorage":"", "idProses":"", "idRak":"", "kwantitas":"123", "status":"Abc"},
+  *                     example={"tanggalJam":"2021-01-01T00:00:00.000Z", "temperature":"123", "action":"Abc", "idPegawai":""},
   *                 ),
   *             )
   *         )
@@ -76,11 +76,11 @@
 
 /**
   * @OA\Put(
-  *      path="/v1/entities/storage/edit",
-  *      operationId="editStorage",
-  *      tags={"storage"},
-  *      summary="Edit an existing Storage",
-  *      description="Edit an existing Storage",
+  *      path="/v1/entities/cold-storage-temperature/edit",
+  *      operationId="editColdStorageTemperature",
+  *      tags={"cold-storage-temperature"},
+  *      summary="Edit an existing Cold Storage Temperature",
+  *      description="Edit an existing Cold Storage Temperature",
   *      @OA\RequestBody(
   *         @OA\MediaType(
   *             mediaType="application/json",
@@ -88,7 +88,7 @@
   *                 @OA\Property(
   *                     property="data",
   *                     type="object",
-  *                     example={"tanggal":"Abc", "idColdStorage":"", "idProses":"", "idRak":"", "kwantitas":"123", "status":"Abc"},
+  *                     example={"tanggalJam":"2021-01-01T00:00:00.000Z", "temperature":"123", "action":"Abc", "idPegawai":""},
   *                ),
   *             )
   *         )
@@ -106,18 +106,18 @@
 
 /**
   * @OA\Delete(
-  *      path="/v1/entities/storage/delete",
-  *      operationId="deleteStorage",
-  *      tags={"storage"},
-  *      summary="Delete one record of Storage",
-  *      description="Delete one record of Storage",
+  *      path="/v1/entities/cold-storage-temperature/delete",
+  *      operationId="deleteColdStorageTemperature",
+  *      tags={"cold-storage-temperature"},
+  *      summary="Delete one record of Cold Storage Temperature",
+  *      description="Delete one record of Cold Storage Temperature",
   *      @OA\RequestBody(
   *         @OA\MediaType(
   *             mediaType="application/json",
   *             @OA\Schema(
   *                 @OA\Property(
   *                     property="slug",
-  *                     example="storage",
+  *                     example="cold-storage-temperature",
   *                     type="string"
   *                 ),
   *                 @OA\Property(
@@ -145,18 +145,18 @@
 
 /**
   * @OA\Delete(
-  *      path="/v1/entities/storage/delete-multiple",
-  *      operationId="deleteMultipleStorage",
-  *      tags={"storage"},
-  *      summary="Delete multiple record of Storage",
-  *      description="Delete multiple record of Storage",
+  *      path="/v1/entities/cold-storage-temperature/delete-multiple",
+  *      operationId="deleteMultipleColdStorageTemperature",
+  *      tags={"cold-storage-temperature"},
+  *      summary="Delete multiple record of Cold Storage Temperature",
+  *      description="Delete multiple record of Cold Storage Temperature",
   *      @OA\RequestBody(
   *         @OA\MediaType(
   *             mediaType="application/json",
   *             @OA\Schema(
   *                 @OA\Property(
   *                     property="slug",
-  *                     example="storage",
+  *                     example="cold-storage-temperature",
   *                     type="string"
   *                 ),
   *                 @OA\Property(
@@ -184,33 +184,31 @@
 
 /**
   * @OA\Put(
-  *      path="/v1/entities/storage/sort",
-  *      operationId="sortStorage",
-  *      tags={"storage"},
-  *      summary="Sort existing Storage",
-  *      description="Sort existing Storage",
+  *      path="/v1/entities/cold-storage-temperature/sort",
+  *      operationId="sortColdStorageTemperature",
+  *      tags={"cold-storage-temperature"},
+  *      summary="Sort existing Cold Storage Temperature",
+  *      description="Sort existing Cold Storage Temperature",
   *      @OA\RequestBody(
   *         @OA\MediaType(
   *             mediaType="application/json",
   *             @OA\Schema(
   *                 @OA\Property(
   *                     property="slug",
-  *                     example="storage",
+  *                     example="cold-storage-temperature",
   *                     type="string"
   *                 ),
   *                 @OA\Property(
   *                     property="data",
   *                     type="array",
-  *                     example={{"id":"123", "tanggal":"Abc", "idColdStorage":"", "idProses":"", "idRak":"", "kwantitas":"123", "status":"Abc", "createdAt":"2021-01-01T00:00:00.000Z", "updatedAt":"2021-01-01T00:00:00.000Z"}, {"id":"123", "tanggal":"Abc", "idColdStorage":"", "idProses":"", "idRak":"", "kwantitas":"123", "status":"Abc", "createdAt":"2021-01-01T00:00:00.000Z", "updatedAt":"2021-01-01T00:00:00.000Z"}},
+  *                     example={{"id":"123", "tanggalJam":"2021-01-01T00:00:00.000Z", "temperature":"123", "action":"Abc", "idPegawai":"", "createdAt":"2021-01-01T00:00:00.000Z", "updatedAt":"2021-01-01T00:00:00.000Z"}, {"id":"123", "tanggalJam":"2021-01-01T00:00:00.000Z", "temperature":"123", "action":"Abc", "idPegawai":"", "createdAt":"2021-01-01T00:00:00.000Z", "updatedAt":"2021-01-01T00:00:00.000Z"}},
   *                     @OA\Items(
   *                         type="object",
   *                         @OA\Property(type="integer", property="id"), 
-  *                         @OA\Property(type="string", property="tanggal"), 
-  *                         @OA\Property(type="string", property="idColdStorage"), 
-  *                         @OA\Property(type="string", property="idProses"), 
-  *                         @OA\Property(type="string", property="idRak"), 
-  *                         @OA\Property(type="integer", property="kwantitas"), 
-  *                         @OA\Property(type="string", property="status"), 
+  *                         @OA\Property(type="string", property="tanggalJam"), 
+  *                         @OA\Property(type="integer", property="temperature"), 
+  *                         @OA\Property(type="string", property="action"), 
+  *                         @OA\Property(type="string", property="idPegawai"), 
   *                         @OA\Property(type="string", property="createdAt"), 
   *                         @OA\Property(type="string", property="updatedAt"),
   *                     ),

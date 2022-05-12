@@ -40,5 +40,29 @@ class BadasoDeploymentOrchestratorSeeder extends Seeder
         $this->seed(MetalDetectorCRUDDataRowAdded::class);
         $this->seed(SupplierCRUDDataTypeAdded::class);
         $this->seed(SupplierCRUDDataRowAdded::class);
+        $this->seed(MonitoringMetalDetectorCRUDDataTypeAdded::class);
+        $this->seed(MonitoringMetalDetectorCRUDDataRowAdded::class);
+        $this->seed(PencucianCRUDDataTypeAdded::class);
+        $this->seed(PencucianCRUDDataRowAdded::class);
+        $this->seed(ProsesCRUDDataTypeAdded::class);
+        $this->seed(ProsesCRUDDataRowAdded::class);
+        $this->seed(PenerimaanDalamCRUDDataTypeAdded::class);
+        $this->seed(PenerimaanDalamCRUDDataRowAdded::class);
+        $this->seed(PenerimaanLuarCRUDDataTypeAdded::class);
+        $this->seed(PenerimaanLuarCRUDDataRowAdded::class);
+        $this->seed(PencatatanSuhuUdangCRUDDataTypeAdded::class);
+        $this->seed(PencatatanSuhuUdangCRUDDataRowAdded::class);
+        $this->seed(ShippingDalamCRUDDataTypeAdded::class);
+        $this->seed(ShippingDalamCRUDDataRowAdded::class);
+        $this->seed(StuffingCRUDDataTypeAdded::class);
+        $this->seed(StuffingCRUDDataRowAdded::class);
+        $this->seed(FreezingMonitoringCRUDDataTypeAdded::class);
+        $this->seed(FreezingMonitoringCRUDDataRowAdded::class);
+        $this->seed(ColdStorageTemperatureCRUDDataTypeAdded::class);
+        $this->seed(ColdStorageTemperatureCRUDDataRowAdded::class);
+        $this->seed(HasilInspeksiProdukSeaTigerCRUDDataTypeAdded::class);
+        $this->seed(HasilInspeksiProdukSeaTigerCRUDDataRowAdded::class);
+        $this->seed(FotoInspeksiUdangCRUDDataTypeAdded::class);
+        $this->seed(FotoInspeksiUdangCRUDDataRowAdded::class);
     }
 }

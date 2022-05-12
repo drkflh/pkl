@@ -2,11 +2,11 @@
 
 /**
   * @OA\Get(
-  *      path="/v1/entities/storage",
-  *      operationId="browseStorage",
-  *      tags={"storage"},
-  *      summary="Browse Storage",
-  *      description="Returns list of Storage",
+  *      path="/v1/entities/foto-inspeksi-udang",
+  *      operationId="browseFotoInspeksiUdang",
+  *      tags={"foto-inspeksi-udang"},
+  *      summary="Browse Foto Inspeksi Udang",
+  *      description="Returns list of Foto Inspeksi Udang",
   *      @OA\Response(response=200, description="Successful operation"),
   *      @OA\Response(response=400, description="Bad request"),
   *      @OA\Response(response=401, description="Unauthorized"),
@@ -20,11 +20,11 @@
 
 /**
   * @OA\Get(
-  *      path="/v1/entities/storage/read?slug=storage&id={id}",
-  *      operationId="readStorage",
-  *      tags={"storage"},
-  *      summary="Get Storage based on id",
-  *      description="Returns Storage based on id",
+  *      path="/v1/entities/foto-inspeksi-udang/read?slug=foto-inspeksi-udang&id={id}",
+  *      operationId="readFotoInspeksiUdang",
+  *      tags={"foto-inspeksi-udang"},
+  *      summary="Get Foto Inspeksi Udang based on id",
+  *      description="Returns Foto Inspeksi Udang based on id",
   *      @OA\Parameter(
   *          name="id",
   *          required=true,
@@ -46,11 +46,11 @@
 
 /**
   * @OA\Post(
-  *      path="/v1/entities/storage/add",
-  *      operationId="addStorage",
-  *      tags={"storage"},
-  *      summary="Insert new Storage",
-  *      description="Insert new Storage into database",
+  *      path="/v1/entities/foto-inspeksi-udang/add",
+  *      operationId="addFotoInspeksiUdang",
+  *      tags={"foto-inspeksi-udang"},
+  *      summary="Insert new Foto Inspeksi Udang",
+  *      description="Insert new Foto Inspeksi Udang into database",
   *      @OA\RequestBody(
   *         @OA\MediaType(
   *             mediaType="application/json",
@@ -58,7 +58,7 @@
   *                 @OA\Property(
   *                     property="data",
   *                     type="object",
-  *                     example={"tanggal":"Abc", "idColdStorage":"", "idProses":"", "idRak":"", "kwantitas":"123", "status":"Abc"},
+  *                     example={"idInspeksi":"", "image":"Abc"},
   *                 ),
   *             )
   *         )
@@ -76,11 +76,11 @@
 
 /**
   * @OA\Put(
-  *      path="/v1/entities/storage/edit",
-  *      operationId="editStorage",
-  *      tags={"storage"},
-  *      summary="Edit an existing Storage",
-  *      description="Edit an existing Storage",
+  *      path="/v1/entities/foto-inspeksi-udang/edit",
+  *      operationId="editFotoInspeksiUdang",
+  *      tags={"foto-inspeksi-udang"},
+  *      summary="Edit an existing Foto Inspeksi Udang",
+  *      description="Edit an existing Foto Inspeksi Udang",
   *      @OA\RequestBody(
   *         @OA\MediaType(
   *             mediaType="application/json",
@@ -88,7 +88,7 @@
   *                 @OA\Property(
   *                     property="data",
   *                     type="object",
-  *                     example={"tanggal":"Abc", "idColdStorage":"", "idProses":"", "idRak":"", "kwantitas":"123", "status":"Abc"},
+  *                     example={"idInspeksi":"", "image":"Abc"},
   *                ),
   *             )
   *         )
@@ -106,18 +106,18 @@
 
 /**
   * @OA\Delete(
-  *      path="/v1/entities/storage/delete",
-  *      operationId="deleteStorage",
-  *      tags={"storage"},
-  *      summary="Delete one record of Storage",
-  *      description="Delete one record of Storage",
+  *      path="/v1/entities/foto-inspeksi-udang/delete",
+  *      operationId="deleteFotoInspeksiUdang",
+  *      tags={"foto-inspeksi-udang"},
+  *      summary="Delete one record of Foto Inspeksi Udang",
+  *      description="Delete one record of Foto Inspeksi Udang",
   *      @OA\RequestBody(
   *         @OA\MediaType(
   *             mediaType="application/json",
   *             @OA\Schema(
   *                 @OA\Property(
   *                     property="slug",
-  *                     example="storage",
+  *                     example="foto-inspeksi-udang",
   *                     type="string"
   *                 ),
   *                 @OA\Property(
@@ -145,18 +145,18 @@
 
 /**
   * @OA\Delete(
-  *      path="/v1/entities/storage/delete-multiple",
-  *      operationId="deleteMultipleStorage",
-  *      tags={"storage"},
-  *      summary="Delete multiple record of Storage",
-  *      description="Delete multiple record of Storage",
+  *      path="/v1/entities/foto-inspeksi-udang/delete-multiple",
+  *      operationId="deleteMultipleFotoInspeksiUdang",
+  *      tags={"foto-inspeksi-udang"},
+  *      summary="Delete multiple record of Foto Inspeksi Udang",
+  *      description="Delete multiple record of Foto Inspeksi Udang",
   *      @OA\RequestBody(
   *         @OA\MediaType(
   *             mediaType="application/json",
   *             @OA\Schema(
   *                 @OA\Property(
   *                     property="slug",
-  *                     example="storage",
+  *                     example="foto-inspeksi-udang",
   *                     type="string"
   *                 ),
   *                 @OA\Property(
@@ -184,33 +184,29 @@
 
 /**
   * @OA\Put(
-  *      path="/v1/entities/storage/sort",
-  *      operationId="sortStorage",
-  *      tags={"storage"},
-  *      summary="Sort existing Storage",
-  *      description="Sort existing Storage",
+  *      path="/v1/entities/foto-inspeksi-udang/sort",
+  *      operationId="sortFotoInspeksiUdang",
+  *      tags={"foto-inspeksi-udang"},
+  *      summary="Sort existing Foto Inspeksi Udang",
+  *      description="Sort existing Foto Inspeksi Udang",
   *      @OA\RequestBody(
   *         @OA\MediaType(
   *             mediaType="application/json",
   *             @OA\Schema(
   *                 @OA\Property(
   *                     property="slug",
-  *                     example="storage",
+  *                     example="foto-inspeksi-udang",
   *                     type="string"
   *                 ),
   *                 @OA\Property(
   *                     property="data",
   *                     type="array",
-  *                     example={{"id":"123", "tanggal":"Abc", "idColdStorage":"", "idProses":"", "idRak":"", "kwantitas":"123", "status":"Abc", "createdAt":"2021-01-01T00:00:00.000Z", "updatedAt":"2021-01-01T00:00:00.000Z"}, {"id":"123", "tanggal":"Abc", "idColdStorage":"", "idProses":"", "idRak":"", "kwantitas":"123", "status":"Abc", "createdAt":"2021-01-01T00:00:00.000Z", "updatedAt":"2021-01-01T00:00:00.000Z"}},
+  *                     example={{"id":"123", "idInspeksi":"", "image":"Abc", "createdAt":"2021-01-01T00:00:00.000Z", "updatedAt":"2021-01-01T00:00:00.000Z"}, {"id":"123", "idInspeksi":"", "image":"Abc", "createdAt":"2021-01-01T00:00:00.000Z", "updatedAt":"2021-01-01T00:00:00.000Z"}},
   *                     @OA\Items(
   *                         type="object",
   *                         @OA\Property(type="integer", property="id"), 
-  *                         @OA\Property(type="string", property="tanggal"), 
-  *                         @OA\Property(type="string", property="idColdStorage"), 
-  *                         @OA\Property(type="string", property="idProses"), 
-  *                         @OA\Property(type="string", property="idRak"), 
-  *                         @OA\Property(type="integer", property="kwantitas"), 
-  *                         @OA\Property(type="string", property="status"), 
+  *                         @OA\Property(type="string", property="idInspeksi"), 
+  *                         @OA\Property(type="string", property="image"), 
   *                         @OA\Property(type="string", property="createdAt"), 
   *                         @OA\Property(type="string", property="updatedAt"),
   *                     ),

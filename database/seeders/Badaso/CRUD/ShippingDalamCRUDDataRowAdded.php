@@ -5,7 +5,7 @@ namespace Database\Seeders\Badaso\CRUD;
 use Illuminate\Database\Seeder;
 use Uasoft\Badaso\Facades\Badaso;
 
-class StorageCRUDDataRowAdded extends Seeder
+class ShippingDalamCRUDDataRowAdded extends Seeder
 {
     /**
      * Auto generated seed file
@@ -20,7 +20,7 @@ class StorageCRUDDataRowAdded extends Seeder
 
         try {
 
-            $data_type = Badaso::model('DataType')::where('name', 'storage')->first();
+            $data_type = Badaso::model('DataType')::where('name', 'shipping_dalam')->first();
 
             \DB::table('badaso_data_rows')->insert(array (
                 0 => 
@@ -58,9 +58,9 @@ class StorageCRUDDataRowAdded extends Seeder
                 2 => 
                 array (
                     'data_type_id' => $data_type->id,
-                    'field' => 'id_cold_storage',
+                    'field' => 'id_denah',
                     'type' => 'relation',
-                    'display_name' => 'Id Cold Storage',
+                    'display_name' => 'Id Denah',
                     'required' => 1,
                     'browse' => 1,
                     'read' => 1,
@@ -68,15 +68,15 @@ class StorageCRUDDataRowAdded extends Seeder
                     'add' => 1,
                     'delete' => 1,
                     'details' => '{}',
-                    'relation' => '{"relation_type":"belongs_to","destination_table":"cold_storage","destination_table_column":"id","destination_table_display_column":"nama_cold_storage"}',
+                    'relation' => '{"relation_type":"belongs_to","destination_table":"denah","destination_table_column":"id","destination_table_display_column":"denah"}',
                     'order' => 3,
                 ),
                 3 => 
                 array (
                     'data_type_id' => $data_type->id,
-                    'field' => 'id_proses',
+                    'field' => 'id_storage',
                     'type' => 'relation',
-                    'display_name' => 'Id Proses',
+                    'display_name' => 'Id Storage',
                     'required' => 1,
                     'browse' => 1,
                     'read' => 1,
@@ -84,26 +84,10 @@ class StorageCRUDDataRowAdded extends Seeder
                     'add' => 1,
                     'delete' => 1,
                     'details' => '{}',
-                    'relation' => '{"relation_type":"belongs_to","destination_table":"proses","destination_table_column":"id","destination_table_display_column":"tanggal"}',
+                    'relation' => '{"relation_type":"belongs_to","destination_table":"storage","destination_table_column":"id","destination_table_display_column":"tanggal"}',
                     'order' => 4,
                 ),
                 4 => 
-                array (
-                    'data_type_id' => $data_type->id,
-                    'field' => 'id_rak',
-                    'type' => 'relation',
-                    'display_name' => 'Id Rak',
-                    'required' => 1,
-                    'browse' => 1,
-                    'read' => 1,
-                    'edit' => 1,
-                    'add' => 1,
-                    'delete' => 1,
-                    'details' => '{}',
-                    'relation' => '{"relation_type":"belongs_to","destination_table":"rak","destination_table_column":"id","destination_table_display_column":"nama_rak"}',
-                    'order' => 5,
-                ),
-                5 => 
                 array (
                     'data_type_id' => $data_type->id,
                     'field' => 'kwantitas',
@@ -117,9 +101,9 @@ class StorageCRUDDataRowAdded extends Seeder
                     'delete' => 1,
                     'details' => '{}',
                     'relation' => NULL,
-                    'order' => 6,
+                    'order' => 5,
                 ),
-                6 => 
+                5 => 
                 array (
                     'data_type_id' => $data_type->id,
                     'field' => 'status',
@@ -133,9 +117,9 @@ class StorageCRUDDataRowAdded extends Seeder
                     'delete' => 1,
                     'details' => '{}',
                     'relation' => NULL,
-                    'order' => 7,
+                    'order' => 6,
                 ),
-                7 => 
+                6 => 
                 array (
                     'data_type_id' => $data_type->id,
                     'field' => 'created_at',
@@ -149,9 +133,9 @@ class StorageCRUDDataRowAdded extends Seeder
                     'delete' => 0,
                     'details' => '{}',
                     'relation' => NULL,
-                    'order' => 8,
+                    'order' => 7,
                 ),
-                8 => 
+                7 => 
                 array (
                     'data_type_id' => $data_type->id,
                     'field' => 'updated_at',
@@ -165,7 +149,7 @@ class StorageCRUDDataRowAdded extends Seeder
                     'delete' => 0,
                     'details' => '{}',
                     'relation' => NULL,
-                    'order' => 9,
+                    'order' => 8,
                 ),
             ));
 

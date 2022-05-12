@@ -2,11 +2,11 @@
 
 /**
   * @OA\Get(
-  *      path="/v1/entities/storage",
-  *      operationId="browseStorage",
-  *      tags={"storage"},
-  *      summary="Browse Storage",
-  *      description="Returns list of Storage",
+  *      path="/v1/entities/penerimaan-luar",
+  *      operationId="browsePenerimaanLuar",
+  *      tags={"penerimaan-luar"},
+  *      summary="Browse Penerimaan Luar",
+  *      description="Returns list of Penerimaan Luar",
   *      @OA\Response(response=200, description="Successful operation"),
   *      @OA\Response(response=400, description="Bad request"),
   *      @OA\Response(response=401, description="Unauthorized"),
@@ -20,11 +20,11 @@
 
 /**
   * @OA\Get(
-  *      path="/v1/entities/storage/read?slug=storage&id={id}",
-  *      operationId="readStorage",
-  *      tags={"storage"},
-  *      summary="Get Storage based on id",
-  *      description="Returns Storage based on id",
+  *      path="/v1/entities/penerimaan-luar/read?slug=penerimaan-luar&id={id}",
+  *      operationId="readPenerimaanLuar",
+  *      tags={"penerimaan-luar"},
+  *      summary="Get Penerimaan Luar based on id",
+  *      description="Returns Penerimaan Luar based on id",
   *      @OA\Parameter(
   *          name="id",
   *          required=true,
@@ -46,11 +46,11 @@
 
 /**
   * @OA\Post(
-  *      path="/v1/entities/storage/add",
-  *      operationId="addStorage",
-  *      tags={"storage"},
-  *      summary="Insert new Storage",
-  *      description="Insert new Storage into database",
+  *      path="/v1/entities/penerimaan-luar/add",
+  *      operationId="addPenerimaanLuar",
+  *      tags={"penerimaan-luar"},
+  *      summary="Insert new Penerimaan Luar",
+  *      description="Insert new Penerimaan Luar into database",
   *      @OA\RequestBody(
   *         @OA\MediaType(
   *             mediaType="application/json",
@@ -58,7 +58,7 @@
   *                 @OA\Property(
   *                     property="data",
   *                     type="object",
-  *                     example={"tanggal":"Abc", "idColdStorage":"", "idProses":"", "idRak":"", "kwantitas":"123", "status":"Abc"},
+  *                     example={"tanggal":"Abc", "idSupplier":"", "idUdang":"", "berat":"123", "total":"123", "idPegawai":""},
   *                 ),
   *             )
   *         )
@@ -76,11 +76,11 @@
 
 /**
   * @OA\Put(
-  *      path="/v1/entities/storage/edit",
-  *      operationId="editStorage",
-  *      tags={"storage"},
-  *      summary="Edit an existing Storage",
-  *      description="Edit an existing Storage",
+  *      path="/v1/entities/penerimaan-luar/edit",
+  *      operationId="editPenerimaanLuar",
+  *      tags={"penerimaan-luar"},
+  *      summary="Edit an existing Penerimaan Luar",
+  *      description="Edit an existing Penerimaan Luar",
   *      @OA\RequestBody(
   *         @OA\MediaType(
   *             mediaType="application/json",
@@ -88,7 +88,7 @@
   *                 @OA\Property(
   *                     property="data",
   *                     type="object",
-  *                     example={"tanggal":"Abc", "idColdStorage":"", "idProses":"", "idRak":"", "kwantitas":"123", "status":"Abc"},
+  *                     example={"tanggal":"Abc", "idSupplier":"", "idUdang":"", "berat":"123", "total":"123", "idPegawai":""},
   *                ),
   *             )
   *         )
@@ -106,18 +106,18 @@
 
 /**
   * @OA\Delete(
-  *      path="/v1/entities/storage/delete",
-  *      operationId="deleteStorage",
-  *      tags={"storage"},
-  *      summary="Delete one record of Storage",
-  *      description="Delete one record of Storage",
+  *      path="/v1/entities/penerimaan-luar/delete",
+  *      operationId="deletePenerimaanLuar",
+  *      tags={"penerimaan-luar"},
+  *      summary="Delete one record of Penerimaan Luar",
+  *      description="Delete one record of Penerimaan Luar",
   *      @OA\RequestBody(
   *         @OA\MediaType(
   *             mediaType="application/json",
   *             @OA\Schema(
   *                 @OA\Property(
   *                     property="slug",
-  *                     example="storage",
+  *                     example="penerimaan-luar",
   *                     type="string"
   *                 ),
   *                 @OA\Property(
@@ -145,18 +145,18 @@
 
 /**
   * @OA\Delete(
-  *      path="/v1/entities/storage/delete-multiple",
-  *      operationId="deleteMultipleStorage",
-  *      tags={"storage"},
-  *      summary="Delete multiple record of Storage",
-  *      description="Delete multiple record of Storage",
+  *      path="/v1/entities/penerimaan-luar/delete-multiple",
+  *      operationId="deleteMultiplePenerimaanLuar",
+  *      tags={"penerimaan-luar"},
+  *      summary="Delete multiple record of Penerimaan Luar",
+  *      description="Delete multiple record of Penerimaan Luar",
   *      @OA\RequestBody(
   *         @OA\MediaType(
   *             mediaType="application/json",
   *             @OA\Schema(
   *                 @OA\Property(
   *                     property="slug",
-  *                     example="storage",
+  *                     example="penerimaan-luar",
   *                     type="string"
   *                 ),
   *                 @OA\Property(
@@ -184,33 +184,33 @@
 
 /**
   * @OA\Put(
-  *      path="/v1/entities/storage/sort",
-  *      operationId="sortStorage",
-  *      tags={"storage"},
-  *      summary="Sort existing Storage",
-  *      description="Sort existing Storage",
+  *      path="/v1/entities/penerimaan-luar/sort",
+  *      operationId="sortPenerimaanLuar",
+  *      tags={"penerimaan-luar"},
+  *      summary="Sort existing Penerimaan Luar",
+  *      description="Sort existing Penerimaan Luar",
   *      @OA\RequestBody(
   *         @OA\MediaType(
   *             mediaType="application/json",
   *             @OA\Schema(
   *                 @OA\Property(
   *                     property="slug",
-  *                     example="storage",
+  *                     example="penerimaan-luar",
   *                     type="string"
   *                 ),
   *                 @OA\Property(
   *                     property="data",
   *                     type="array",
-  *                     example={{"id":"123", "tanggal":"Abc", "idColdStorage":"", "idProses":"", "idRak":"", "kwantitas":"123", "status":"Abc", "createdAt":"2021-01-01T00:00:00.000Z", "updatedAt":"2021-01-01T00:00:00.000Z"}, {"id":"123", "tanggal":"Abc", "idColdStorage":"", "idProses":"", "idRak":"", "kwantitas":"123", "status":"Abc", "createdAt":"2021-01-01T00:00:00.000Z", "updatedAt":"2021-01-01T00:00:00.000Z"}},
+  *                     example={{"id":"123", "tanggal":"Abc", "idSupplier":"", "idUdang":"", "berat":"123", "total":"123", "idPegawai":"", "createdAt":"2021-01-01T00:00:00.000Z", "updatedAt":"2021-01-01T00:00:00.000Z"}, {"id":"123", "tanggal":"Abc", "idSupplier":"", "idUdang":"", "berat":"123", "total":"123", "idPegawai":"", "createdAt":"2021-01-01T00:00:00.000Z", "updatedAt":"2021-01-01T00:00:00.000Z"}},
   *                     @OA\Items(
   *                         type="object",
   *                         @OA\Property(type="integer", property="id"), 
   *                         @OA\Property(type="string", property="tanggal"), 
-  *                         @OA\Property(type="string", property="idColdStorage"), 
-  *                         @OA\Property(type="string", property="idProses"), 
-  *                         @OA\Property(type="string", property="idRak"), 
-  *                         @OA\Property(type="integer", property="kwantitas"), 
-  *                         @OA\Property(type="string", property="status"), 
+  *                         @OA\Property(type="string", property="idSupplier"), 
+  *                         @OA\Property(type="string", property="idUdang"), 
+  *                         @OA\Property(type="integer", property="berat"), 
+  *                         @OA\Property(type="integer", property="total"), 
+  *                         @OA\Property(type="string", property="idPegawai"), 
   *                         @OA\Property(type="string", property="createdAt"), 
   *                         @OA\Property(type="string", property="updatedAt"),
   *                     ),

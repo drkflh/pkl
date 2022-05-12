@@ -2,11 +2,11 @@
 
 /**
   * @OA\Get(
-  *      path="/v1/entities/storage",
-  *      operationId="browseStorage",
-  *      tags={"storage"},
-  *      summary="Browse Storage",
-  *      description="Returns list of Storage",
+  *      path="/v1/entities/proses",
+  *      operationId="browseProses",
+  *      tags={"proses"},
+  *      summary="Browse Proses",
+  *      description="Returns list of Proses",
   *      @OA\Response(response=200, description="Successful operation"),
   *      @OA\Response(response=400, description="Bad request"),
   *      @OA\Response(response=401, description="Unauthorized"),
@@ -20,11 +20,11 @@
 
 /**
   * @OA\Get(
-  *      path="/v1/entities/storage/read?slug=storage&id={id}",
-  *      operationId="readStorage",
-  *      tags={"storage"},
-  *      summary="Get Storage based on id",
-  *      description="Returns Storage based on id",
+  *      path="/v1/entities/proses/read?slug=proses&id={id}",
+  *      operationId="readProses",
+  *      tags={"proses"},
+  *      summary="Get Proses based on id",
+  *      description="Returns Proses based on id",
   *      @OA\Parameter(
   *          name="id",
   *          required=true,
@@ -46,11 +46,11 @@
 
 /**
   * @OA\Post(
-  *      path="/v1/entities/storage/add",
-  *      operationId="addStorage",
-  *      tags={"storage"},
-  *      summary="Insert new Storage",
-  *      description="Insert new Storage into database",
+  *      path="/v1/entities/proses/add",
+  *      operationId="addProses",
+  *      tags={"proses"},
+  *      summary="Insert new Proses",
+  *      description="Insert new Proses into database",
   *      @OA\RequestBody(
   *         @OA\MediaType(
   *             mediaType="application/json",
@@ -58,7 +58,7 @@
   *                 @OA\Property(
   *                     property="data",
   *                     type="object",
-  *                     example={"tanggal":"Abc", "idColdStorage":"", "idProses":"", "idRak":"", "kwantitas":"123", "status":"Abc"},
+  *                     example={"tanggal":"Abc", "idPenerimaanDalam":"", "kwantitas":"123", "status":"Abc"},
   *                 ),
   *             )
   *         )
@@ -76,11 +76,11 @@
 
 /**
   * @OA\Put(
-  *      path="/v1/entities/storage/edit",
-  *      operationId="editStorage",
-  *      tags={"storage"},
-  *      summary="Edit an existing Storage",
-  *      description="Edit an existing Storage",
+  *      path="/v1/entities/proses/edit",
+  *      operationId="editProses",
+  *      tags={"proses"},
+  *      summary="Edit an existing Proses",
+  *      description="Edit an existing Proses",
   *      @OA\RequestBody(
   *         @OA\MediaType(
   *             mediaType="application/json",
@@ -88,7 +88,7 @@
   *                 @OA\Property(
   *                     property="data",
   *                     type="object",
-  *                     example={"tanggal":"Abc", "idColdStorage":"", "idProses":"", "idRak":"", "kwantitas":"123", "status":"Abc"},
+  *                     example={"tanggal":"Abc", "idPenerimaanDalam":"", "kwantitas":"123", "status":"Abc"},
   *                ),
   *             )
   *         )
@@ -106,18 +106,18 @@
 
 /**
   * @OA\Delete(
-  *      path="/v1/entities/storage/delete",
-  *      operationId="deleteStorage",
-  *      tags={"storage"},
-  *      summary="Delete one record of Storage",
-  *      description="Delete one record of Storage",
+  *      path="/v1/entities/proses/delete",
+  *      operationId="deleteProses",
+  *      tags={"proses"},
+  *      summary="Delete one record of Proses",
+  *      description="Delete one record of Proses",
   *      @OA\RequestBody(
   *         @OA\MediaType(
   *             mediaType="application/json",
   *             @OA\Schema(
   *                 @OA\Property(
   *                     property="slug",
-  *                     example="storage",
+  *                     example="proses",
   *                     type="string"
   *                 ),
   *                 @OA\Property(
@@ -145,18 +145,18 @@
 
 /**
   * @OA\Delete(
-  *      path="/v1/entities/storage/delete-multiple",
-  *      operationId="deleteMultipleStorage",
-  *      tags={"storage"},
-  *      summary="Delete multiple record of Storage",
-  *      description="Delete multiple record of Storage",
+  *      path="/v1/entities/proses/delete-multiple",
+  *      operationId="deleteMultipleProses",
+  *      tags={"proses"},
+  *      summary="Delete multiple record of Proses",
+  *      description="Delete multiple record of Proses",
   *      @OA\RequestBody(
   *         @OA\MediaType(
   *             mediaType="application/json",
   *             @OA\Schema(
   *                 @OA\Property(
   *                     property="slug",
-  *                     example="storage",
+  *                     example="proses",
   *                     type="string"
   *                 ),
   *                 @OA\Property(
@@ -184,31 +184,29 @@
 
 /**
   * @OA\Put(
-  *      path="/v1/entities/storage/sort",
-  *      operationId="sortStorage",
-  *      tags={"storage"},
-  *      summary="Sort existing Storage",
-  *      description="Sort existing Storage",
+  *      path="/v1/entities/proses/sort",
+  *      operationId="sortProses",
+  *      tags={"proses"},
+  *      summary="Sort existing Proses",
+  *      description="Sort existing Proses",
   *      @OA\RequestBody(
   *         @OA\MediaType(
   *             mediaType="application/json",
   *             @OA\Schema(
   *                 @OA\Property(
   *                     property="slug",
-  *                     example="storage",
+  *                     example="proses",
   *                     type="string"
   *                 ),
   *                 @OA\Property(
   *                     property="data",
   *                     type="array",
-  *                     example={{"id":"123", "tanggal":"Abc", "idColdStorage":"", "idProses":"", "idRak":"", "kwantitas":"123", "status":"Abc", "createdAt":"2021-01-01T00:00:00.000Z", "updatedAt":"2021-01-01T00:00:00.000Z"}, {"id":"123", "tanggal":"Abc", "idColdStorage":"", "idProses":"", "idRak":"", "kwantitas":"123", "status":"Abc", "createdAt":"2021-01-01T00:00:00.000Z", "updatedAt":"2021-01-01T00:00:00.000Z"}},
+  *                     example={{"id":"123", "tanggal":"Abc", "idPenerimaanDalam":"", "kwantitas":"123", "status":"Abc", "createdAt":"2021-01-01T00:00:00.000Z", "updatedAt":"2021-01-01T00:00:00.000Z"}, {"id":"123", "tanggal":"Abc", "idPenerimaanDalam":"", "kwantitas":"123", "status":"Abc", "createdAt":"2021-01-01T00:00:00.000Z", "updatedAt":"2021-01-01T00:00:00.000Z"}},
   *                     @OA\Items(
   *                         type="object",
   *                         @OA\Property(type="integer", property="id"), 
   *                         @OA\Property(type="string", property="tanggal"), 
-  *                         @OA\Property(type="string", property="idColdStorage"), 
-  *                         @OA\Property(type="string", property="idProses"), 
-  *                         @OA\Property(type="string", property="idRak"), 
+  *                         @OA\Property(type="string", property="idPenerimaanDalam"), 
   *                         @OA\Property(type="integer", property="kwantitas"), 
   *                         @OA\Property(type="string", property="status"), 
   *                         @OA\Property(type="string", property="createdAt"), 

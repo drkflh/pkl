@@ -2,11 +2,11 @@
 
 /**
   * @OA\Get(
-  *      path="/v1/entities/storage",
-  *      operationId="browseStorage",
-  *      tags={"storage"},
-  *      summary="Browse Storage",
-  *      description="Returns list of Storage",
+  *      path="/v1/entities/pencatatan-suhu-udang",
+  *      operationId="browsePencatatanSuhuUdang",
+  *      tags={"pencatatan-suhu-udang"},
+  *      summary="Browse Pencatatan Suhu Udang",
+  *      description="Returns list of Pencatatan Suhu Udang",
   *      @OA\Response(response=200, description="Successful operation"),
   *      @OA\Response(response=400, description="Bad request"),
   *      @OA\Response(response=401, description="Unauthorized"),
@@ -20,11 +20,11 @@
 
 /**
   * @OA\Get(
-  *      path="/v1/entities/storage/read?slug=storage&id={id}",
-  *      operationId="readStorage",
-  *      tags={"storage"},
-  *      summary="Get Storage based on id",
-  *      description="Returns Storage based on id",
+  *      path="/v1/entities/pencatatan-suhu-udang/read?slug=pencatatan-suhu-udang&id={id}",
+  *      operationId="readPencatatanSuhuUdang",
+  *      tags={"pencatatan-suhu-udang"},
+  *      summary="Get Pencatatan Suhu Udang based on id",
+  *      description="Returns Pencatatan Suhu Udang based on id",
   *      @OA\Parameter(
   *          name="id",
   *          required=true,
@@ -46,11 +46,11 @@
 
 /**
   * @OA\Post(
-  *      path="/v1/entities/storage/add",
-  *      operationId="addStorage",
-  *      tags={"storage"},
-  *      summary="Insert new Storage",
-  *      description="Insert new Storage into database",
+  *      path="/v1/entities/pencatatan-suhu-udang/add",
+  *      operationId="addPencatatanSuhuUdang",
+  *      tags={"pencatatan-suhu-udang"},
+  *      summary="Insert new Pencatatan Suhu Udang",
+  *      description="Insert new Pencatatan Suhu Udang into database",
   *      @OA\RequestBody(
   *         @OA\MediaType(
   *             mediaType="application/json",
@@ -58,7 +58,7 @@
   *                 @OA\Property(
   *                     property="data",
   *                     type="object",
-  *                     example={"tanggal":"Abc", "idColdStorage":"", "idProses":"", "idRak":"", "kwantitas":"123", "status":"Abc"},
+  *                     example={"tanggalJam":"2021-01-01T00:00:00.000Z", "suhu":"123", "action":"Abc", "idPegawai":"", "catatan":"Abc"},
   *                 ),
   *             )
   *         )
@@ -76,11 +76,11 @@
 
 /**
   * @OA\Put(
-  *      path="/v1/entities/storage/edit",
-  *      operationId="editStorage",
-  *      tags={"storage"},
-  *      summary="Edit an existing Storage",
-  *      description="Edit an existing Storage",
+  *      path="/v1/entities/pencatatan-suhu-udang/edit",
+  *      operationId="editPencatatanSuhuUdang",
+  *      tags={"pencatatan-suhu-udang"},
+  *      summary="Edit an existing Pencatatan Suhu Udang",
+  *      description="Edit an existing Pencatatan Suhu Udang",
   *      @OA\RequestBody(
   *         @OA\MediaType(
   *             mediaType="application/json",
@@ -88,7 +88,7 @@
   *                 @OA\Property(
   *                     property="data",
   *                     type="object",
-  *                     example={"tanggal":"Abc", "idColdStorage":"", "idProses":"", "idRak":"", "kwantitas":"123", "status":"Abc"},
+  *                     example={"tanggalJam":"2021-01-01T00:00:00.000Z", "suhu":"123", "action":"Abc", "idPegawai":"", "catatan":"Abc"},
   *                ),
   *             )
   *         )
@@ -106,18 +106,18 @@
 
 /**
   * @OA\Delete(
-  *      path="/v1/entities/storage/delete",
-  *      operationId="deleteStorage",
-  *      tags={"storage"},
-  *      summary="Delete one record of Storage",
-  *      description="Delete one record of Storage",
+  *      path="/v1/entities/pencatatan-suhu-udang/delete",
+  *      operationId="deletePencatatanSuhuUdang",
+  *      tags={"pencatatan-suhu-udang"},
+  *      summary="Delete one record of Pencatatan Suhu Udang",
+  *      description="Delete one record of Pencatatan Suhu Udang",
   *      @OA\RequestBody(
   *         @OA\MediaType(
   *             mediaType="application/json",
   *             @OA\Schema(
   *                 @OA\Property(
   *                     property="slug",
-  *                     example="storage",
+  *                     example="pencatatan-suhu-udang",
   *                     type="string"
   *                 ),
   *                 @OA\Property(
@@ -145,18 +145,18 @@
 
 /**
   * @OA\Delete(
-  *      path="/v1/entities/storage/delete-multiple",
-  *      operationId="deleteMultipleStorage",
-  *      tags={"storage"},
-  *      summary="Delete multiple record of Storage",
-  *      description="Delete multiple record of Storage",
+  *      path="/v1/entities/pencatatan-suhu-udang/delete-multiple",
+  *      operationId="deleteMultiplePencatatanSuhuUdang",
+  *      tags={"pencatatan-suhu-udang"},
+  *      summary="Delete multiple record of Pencatatan Suhu Udang",
+  *      description="Delete multiple record of Pencatatan Suhu Udang",
   *      @OA\RequestBody(
   *         @OA\MediaType(
   *             mediaType="application/json",
   *             @OA\Schema(
   *                 @OA\Property(
   *                     property="slug",
-  *                     example="storage",
+  *                     example="pencatatan-suhu-udang",
   *                     type="string"
   *                 ),
   *                 @OA\Property(
@@ -184,33 +184,32 @@
 
 /**
   * @OA\Put(
-  *      path="/v1/entities/storage/sort",
-  *      operationId="sortStorage",
-  *      tags={"storage"},
-  *      summary="Sort existing Storage",
-  *      description="Sort existing Storage",
+  *      path="/v1/entities/pencatatan-suhu-udang/sort",
+  *      operationId="sortPencatatanSuhuUdang",
+  *      tags={"pencatatan-suhu-udang"},
+  *      summary="Sort existing Pencatatan Suhu Udang",
+  *      description="Sort existing Pencatatan Suhu Udang",
   *      @OA\RequestBody(
   *         @OA\MediaType(
   *             mediaType="application/json",
   *             @OA\Schema(
   *                 @OA\Property(
   *                     property="slug",
-  *                     example="storage",
+  *                     example="pencatatan-suhu-udang",
   *                     type="string"
   *                 ),
   *                 @OA\Property(
   *                     property="data",
   *                     type="array",
-  *                     example={{"id":"123", "tanggal":"Abc", "idColdStorage":"", "idProses":"", "idRak":"", "kwantitas":"123", "status":"Abc", "createdAt":"2021-01-01T00:00:00.000Z", "updatedAt":"2021-01-01T00:00:00.000Z"}, {"id":"123", "tanggal":"Abc", "idColdStorage":"", "idProses":"", "idRak":"", "kwantitas":"123", "status":"Abc", "createdAt":"2021-01-01T00:00:00.000Z", "updatedAt":"2021-01-01T00:00:00.000Z"}},
+  *                     example={{"id":"123", "tanggalJam":"2021-01-01T00:00:00.000Z", "suhu":"123", "action":"Abc", "idPegawai":"", "catatan":"Abc", "createdAt":"2021-01-01T00:00:00.000Z", "updatedAt":"2021-01-01T00:00:00.000Z"}, {"id":"123", "tanggalJam":"2021-01-01T00:00:00.000Z", "suhu":"123", "action":"Abc", "idPegawai":"", "catatan":"Abc", "createdAt":"2021-01-01T00:00:00.000Z", "updatedAt":"2021-01-01T00:00:00.000Z"}},
   *                     @OA\Items(
   *                         type="object",
   *                         @OA\Property(type="integer", property="id"), 
-  *                         @OA\Property(type="string", property="tanggal"), 
-  *                         @OA\Property(type="string", property="idColdStorage"), 
-  *                         @OA\Property(type="string", property="idProses"), 
-  *                         @OA\Property(type="string", property="idRak"), 
-  *                         @OA\Property(type="integer", property="kwantitas"), 
-  *                         @OA\Property(type="string", property="status"), 
+  *                         @OA\Property(type="string", property="tanggalJam"), 
+  *                         @OA\Property(type="integer", property="suhu"), 
+  *                         @OA\Property(type="string", property="action"), 
+  *                         @OA\Property(type="string", property="idPegawai"), 
+  *                         @OA\Property(type="string", property="catatan"), 
   *                         @OA\Property(type="string", property="createdAt"), 
   *                         @OA\Property(type="string", property="updatedAt"),
   *                     ),
