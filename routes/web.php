@@ -26,11 +26,11 @@ Route::get('/', function () {
 });
 
 //metal detector -> rampung
-Route::get("/metal", [MetalController::class, 'metal']);
+Route::get("/monitoring-metal-detector", [MetalController::class, 'metal']);
 Route::get('/export-monitoring-metal-detector', [MetalController::class, 'exportmetal']);
 
 //cold storage -> ora melu juga kayane
-Route::get("/cold", [ColdController::class, 'cold']);
+Route::get("/cold-storage", [ColdController::class, 'cold']);
 Route::get('/export-cold-storgae', [ColdController::class, 'exportcold']);
 
 //pencatatan suhu udang -> rampung 1

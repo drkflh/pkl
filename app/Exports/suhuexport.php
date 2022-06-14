@@ -332,7 +332,7 @@ class suhuexport implements FromCollection, WithMapping, WithHeadings, ShouldAut
 
             ['', ''],
 
-            ['', ' Pencatatan Suhu Udang'],
+            ['', ' PENCATATAN SUHU UDANG'],
 
             ['', ''],
 

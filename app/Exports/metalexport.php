@@ -336,7 +336,7 @@ class metalexport implements FromCollection, WithMapping, WithHeadings, ShouldAu
 
             ['', '',],
 
-            ['', 'Metal Detector'],
+            ['', 'Monitoring Metal Detector'],
 
             ['', ''],
 
@@ -362,9 +362,9 @@ class metalexport implements FromCollection, WithMapping, WithHeadings, ShouldAu
         return [
            $metal_detector->id,
            $metal_detector->id_metal_detector,
-        $metal_detector->fe_20,
+           $metal_detector->fe_20,
            $metal_detector->sus_25,
-            $metal_detector->status,
+           $metal_detector->status,
 
 
 

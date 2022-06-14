@@ -17,6 +17,6 @@ class TempSuhuController extends Controller
     }
     public function exporttempsuhu()
     {
-        return Excel::download(new temperatursuhuexport, 'Data-Suhu.xlsx');
+        return Excel::download(new temperatursuhuexport, 'Data-Temperature-Suhu-Udang.xlsx');
     }
 }

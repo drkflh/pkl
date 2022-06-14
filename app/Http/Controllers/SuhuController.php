@@ -18,6 +18,6 @@ class SuhuController extends Controller
     }
     public function exportsuhu()
     {
-        return Excel::download(new suhuexport, 'Data-Suhu-Udang.xlsx');
+        return Excel::download(new suhuexport, 'Data-Pencacatan-Suhu-Udang.xlsx');
     }
 }

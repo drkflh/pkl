@@ -253,7 +253,7 @@ class freezingexport implements FromCollection, WithMapping, WithHeadings, Shoul
 
         ]);
 
-        $sheet->getStyle('A10:' . $maxColl . $maxRow)->applyFromArray([
+        $sheet->getStyle('A9:' . $maxColl . $maxRow)->applyFromArray([
 
             'borders' => [
 
@@ -303,17 +303,16 @@ class freezingexport implements FromCollection, WithMapping, WithHeadings, Shoul
 
             ['', '',],
 
-            ['', 'COLD STORAGE MANAGER'],
+            ['', 'FREEZING MONITORING RECORD'],
 
             ['', ''],
 
             ['', ''],
 
-            ['', 'FORM 01 COLD STORAGE MANAGER'],
+            ['', 'FORM FREEZING MONITORING RECORD'],
 
             ['', ''],
 
-            ['Cold Storage No : ', '1'],
 
             ['Month', ''],
             ['Date', 'No Freezing','Start Time','Freezing Temperature','Amount Of Product','End Time','Freezing Temperature','Product Condition','Component Action'],

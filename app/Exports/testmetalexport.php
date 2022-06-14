@@ -313,13 +313,13 @@ class testmetalexport implements FromCollection, WithMapping, WithHeadings, Shou
 
             ['', ''],
 
-            ['', 'FORM 01 TEST METAL DETECTOR'],
+            ['', 'TEST METAL DETECTOR'],
 
             ['', ''],
 
-            ['Test MetalDetector No : ', '1'],
+            [''],
 
-            ['Dateh', ''],
+            ['Date', ''],
             ['Waktu', 'Sebelum Dioperasikan', 'Result'],
 
 
@@ -335,7 +335,7 @@ class testmetalexport implements FromCollection, WithMapping, WithHeadings, Shou
 
         return [
             $test_metal_detector->waktu,
-            $test_metal_detector->sebelum_dioperasikan,
+            $test_metal_detector->sebelum_dioperasikakn,
             $test_metal_detector->result,
 
 

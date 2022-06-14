@@ -27,7 +27,7 @@
 				<div class="page-breadcrumb d-none d-sm-flex align-items-center mb-3">
 					<div class="ms-auto">
 						<div class="btn-group">
-							<a href="/export-cold-temperatur" class="btn btn-primary">Export Excel</a>
+							<a href="/export-cold-storage-temperatur-log" class="btn btn-primary">Export Excel</a>
 							<button type="button" class="btn btn-primary split-bg-primary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown">	<span class="visually-hidden">Toggle Dropdown</span>
 							</button>
 							<div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-end"><a class="dropdown-item" href="/badaso-dashboard/general/cold-storage-temperature-log/add">Add Data</a>

@@ -17,6 +17,6 @@ class MetalController extends Controller
     }
     public function exportmetal()
     {
-        return Excel::download(new metalexport, 'Data-metal.xlsx');
+        return Excel::download(new metalexport, 'Monitoring-Metal-Detector.xlsx');
     }
 }

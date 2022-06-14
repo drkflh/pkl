@@ -17,6 +17,6 @@ class ColdTemController extends Controller
     }
     public function exporttemp()
     {
-        return Excel::download(new coldtemexport, 'Data-Cold-Storage-Temperatur.xlsx');
+        return Excel::download(new coldtemexport, 'Data-Cold-Storage-Temperature-Log.xlsx');
     }
 }

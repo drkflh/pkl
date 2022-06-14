@@ -437,7 +437,7 @@ class temperatursuhuexport implements FromCollection, WithMapping, WithHeadings,
 
             ['', ''],
 
-            ['', 'Monitoring Temperature Suhu Udang'],
+            ['', 'Temperature Suhu Udang'],
 
             ['', ''],
 

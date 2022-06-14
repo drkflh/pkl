@@ -43,9 +43,9 @@ class coldtemexport implements FromCollection, WithMapping, WithHeadings, Should
 
         return [
 
-            'D' => 10,
+            'D' => 20,
 
-            'C' => 15
+            'C' => 20
 
         ];
 
@@ -307,20 +307,20 @@ class coldtemexport implements FromCollection, WithMapping, WithHeadings, Should
 
             ['', '',],
 
-            ['', 'COLD STORAGE MANAGER'],
+            ['', 'COLD STORAGE TEMPERATURE LOG'],
 
             ['', ''],
 
             ['', ''],
 
-            ['', 'FORM 01 COLD STORAGE MANAGER'],
+            ['', 'COLD STORAGE TEMPERATURE LOG'],
 
             ['', ''],
 
             ['Cold Storage No : ', '1'],
 
             ['Month', ''],
-            ['No', 'Nama', 'Alamat'],
+            ['Date', 'Time Temperature Reading', 'Correction Action','Inspector Initial'],
 
 
 
