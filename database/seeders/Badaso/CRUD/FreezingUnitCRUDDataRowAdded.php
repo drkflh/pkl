@@ -43,7 +43,7 @@ class FreezingUnitCRUDDataRowAdded extends Seeder
                 array (
                     'data_type_id' => $data_type->id,
                     'field' => 'freezing_unit',
-                    'type' => 'text',
+                    'type' => 'number',
                     'display_name' => 'Freezing Unit',
                     'required' => 1,
                     'browse' => 1,

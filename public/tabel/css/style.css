@@ -1,0 +1,61 @@
+
+/*
+Template Name: Snacked Admin
+Author: codervent
+Email: codervent@gmail.com
+File: style.css
+*/
+
+
+/* 
+- General
+- Header
+- Sidebar
+- Page Content
+- Utilities
+- Widgets
+- Chips
+- Email
+- chat box
+- Authentication
+- swicther
+- Responsive
+
+ */
+
+
+/* General */
+
+body {
+    font-size: 14px;
+	color: #4c5258;
+	letter-spacing: .5px;
+    font-family: Roboto, sans-serif;
+    background-color: #f7f8fa;
+    overflow-x: hidden;
+}
+
+.wrapper{
+    width: auto;
+	position: relative
+}
+
+a {
+    text-decoration: none;
+}
+
+::placeholder {
+    opacity: 0.4 !important;
+}
+
+
+/* Page Content */
+
+.page-content {
+    margin-left: 60px;
+    margin-top: 60px;
+    padding: 1.5rem;
+    transition: all .2s;
+}
+
+

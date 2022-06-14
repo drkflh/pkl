@@ -58,7 +58,7 @@
   *                 @OA\Property(
   *                     property="data",
   *                     type="object",
-  *                     example={"tanggal":"Abc", "idPenerimaanDalam":"", "totalEkor":"123", "beratIris":"123", "ekor":"Abc", "lbs":"Abc", "uniformity":"Abc", "blackSpot":"Abc", "blackTail":"Abc", "blackRing":"Abc", "dehidrasi":"Abc", "discolour":"Abc", "softShell":"Abc"},
+  *                     example={"tanggal":"Abc", "idPenerimaanDalam":"Abc", "totalEkor":"123", "beratIris":"123", "ekor":"Abc", "lbs":"Abc", "uniformity":"Abc", "blackSpot":"Abc", "blackTail":"Abc", "blackRing":"Abc", "dehidrasi":"Abc", "discolour":"Abc", "softShell":"Abc"},
   *                 ),
   *             )
   *         )
@@ -88,7 +88,7 @@
   *                 @OA\Property(
   *                     property="data",
   *                     type="object",
-  *                     example={"tanggal":"Abc", "idPenerimaanDalam":"", "totalEkor":"123", "beratIris":"123", "ekor":"Abc", "lbs":"Abc", "uniformity":"Abc", "blackSpot":"Abc", "blackTail":"Abc", "blackRing":"Abc", "dehidrasi":"Abc", "discolour":"Abc", "softShell":"Abc"},
+  *                     example={"tanggal":"Abc", "idPenerimaanDalam":"Abc", "totalEkor":"123", "beratIris":"123", "ekor":"Abc", "lbs":"Abc", "uniformity":"Abc", "blackSpot":"Abc", "blackTail":"Abc", "blackRing":"Abc", "dehidrasi":"Abc", "discolour":"Abc", "softShell":"Abc"},
   *                ),
   *             )
   *         )
@@ -201,7 +201,7 @@
   *                 @OA\Property(
   *                     property="data",
   *                     type="array",
-  *                     example={{"id":"123", "tanggal":"Abc", "idPenerimaanDalam":"", "totalEkor":"123", "beratIris":"123", "ekor":"Abc", "lbs":"Abc", "uniformity":"Abc", "blackSpot":"Abc", "blackTail":"Abc", "blackRing":"Abc", "dehidrasi":"Abc", "discolour":"Abc", "softShell":"Abc", "createdAt":"2021-01-01T00:00:00.000Z", "updatedAt":"2021-01-01T00:00:00.000Z"}, {"id":"123", "tanggal":"Abc", "idPenerimaanDalam":"", "totalEkor":"123", "beratIris":"123", "ekor":"Abc", "lbs":"Abc", "uniformity":"Abc", "blackSpot":"Abc", "blackTail":"Abc", "blackRing":"Abc", "dehidrasi":"Abc", "discolour":"Abc", "softShell":"Abc", "createdAt":"2021-01-01T00:00:00.000Z", "updatedAt":"2021-01-01T00:00:00.000Z"}},
+  *                     example={{"id":"123", "tanggal":"Abc", "idPenerimaanDalam":"Abc", "totalEkor":"123", "beratIris":"123", "ekor":"Abc", "lbs":"Abc", "uniformity":"Abc", "blackSpot":"Abc", "blackTail":"Abc", "blackRing":"Abc", "dehidrasi":"Abc", "discolour":"Abc", "softShell":"Abc", "createdAt":"2021-01-01T00:00:00.000Z", "updatedAt":"2021-01-01T00:00:00.000Z"}, {"id":"123", "tanggal":"Abc", "idPenerimaanDalam":"Abc", "totalEkor":"123", "beratIris":"123", "ekor":"Abc", "lbs":"Abc", "uniformity":"Abc", "blackSpot":"Abc", "blackTail":"Abc", "blackRing":"Abc", "dehidrasi":"Abc", "discolour":"Abc", "softShell":"Abc", "createdAt":"2021-01-01T00:00:00.000Z", "updatedAt":"2021-01-01T00:00:00.000Z"}},
   *                     @OA\Items(
   *                         type="object",
   *                         @OA\Property(type="integer", property="id"), 

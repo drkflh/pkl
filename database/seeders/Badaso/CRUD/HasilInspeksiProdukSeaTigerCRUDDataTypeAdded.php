@@ -45,9 +45,9 @@ class HasilInspeksiProdukSeaTigerCRUDDataTypeAdded extends Seeder
                 'details' => NULL,
                 'notification' => '[]',
                 'is_soft_delete' => false,
-                'updated_at' => '2022-05-11T14:44:53.000000Z',
-                'created_at' => '2022-05-11T14:44:53.000000Z',
-                'id' => 22,
+                'updated_at' => '2022-05-18T04:58:44.000000Z',
+                'created_at' => '2022-05-18T04:58:44.000000Z',
+                'id' => 24,
             ));
 
             Badaso::model('Permission')->generateFor('hasil_inspeksi_produk_sea_tiger');

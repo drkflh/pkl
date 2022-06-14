@@ -45,9 +45,9 @@ class FreezingUnitCRUDDataTypeAdded extends Seeder
                 'details' => NULL,
                 'notification' => '[]',
                 'is_soft_delete' => false,
-                'updated_at' => '2022-05-10T05:17:55.000000Z',
-                'created_at' => '2022-05-10T05:17:55.000000Z',
-                'id' => 8,
+                'updated_at' => '2022-06-13T07:57:35.000000Z',
+                'created_at' => '2022-06-13T07:57:35.000000Z',
+                'id' => 28,
             ));
 
             Badaso::model('Permission')->generateFor('freezing_unit');

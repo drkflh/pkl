@@ -3,9 +3,11 @@
 return [
     'cold_storage',
     'cold_storage_temperature',
+    'cold_storage_temperature_log',
     'denah',
     'foto_inspeksi_udang',
     'freezing_monitoring',
+    'freezing_monitoring_record',
     'freezing_unit',
     'hasil_inspeksi_produk_sea_tiger',
     'kelas',
@@ -23,5 +25,7 @@ return [
     'storage',
     'stuffing',
     'supplier',
+    'temperature_suhu_udang',
+    'test_metal_detector',
     'udang',
 ];

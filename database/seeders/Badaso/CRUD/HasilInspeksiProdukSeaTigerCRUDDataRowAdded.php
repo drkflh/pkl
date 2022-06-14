@@ -59,7 +59,7 @@ class HasilInspeksiProdukSeaTigerCRUDDataRowAdded extends Seeder
                 array (
                     'data_type_id' => $data_type->id,
                     'field' => 'id_penerimaan_dalam',
-                    'type' => 'relation',
+                    'type' => 'text',
                     'display_name' => 'Id Penerimaan Dalam',
                     'required' => 1,
                     'browse' => 1,
@@ -68,7 +68,7 @@ class HasilInspeksiProdukSeaTigerCRUDDataRowAdded extends Seeder
                     'add' => 1,
                     'delete' => 1,
                     'details' => '{}',
-                    'relation' => '{"relation_type":"belongs_to","destination_table":"penerimaan_dalam","destination_table_column":"id","destination_table_display_column":"tanggal"}',
+                    'relation' => NULL,
                     'order' => 3,
                 ),
                 3 => 
