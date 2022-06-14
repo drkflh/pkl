@@ -79,5 +79,7 @@ class BadasoDeploymentOrchestratorSeeder extends Seeder
         $this->seed(TestMetalDetectorCRUDDataRowAdded::class);
         $this->seed(ColdStorageTemperatureLogCRUDDataTypeAdded::class);
         $this->seed(ColdStorageTemperatureLogCRUDDataRowAdded::class);
+        $this->seed(TemperatureSuhuUdangCRUDDataTypeAdded::class);
+        $this->seed(TemperatureSuhuUdangCRUDDataRowAdded::class);
     }
 }
