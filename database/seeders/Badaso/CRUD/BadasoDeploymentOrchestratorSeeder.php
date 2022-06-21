@@ -81,5 +81,7 @@ class BadasoDeploymentOrchestratorSeeder extends Seeder
         $this->seed(ColdStorageTemperatureLogCRUDDataRowAdded::class);
         $this->seed(TemperatureSuhuUdangCRUDDataTypeAdded::class);
         $this->seed(TemperatureSuhuUdangCRUDDataRowAdded::class);
+        $this->seed(PencatatanSuhuAirCRUDDataTypeAdded::class);
+        $this->seed(PencatatanSuhuAirCRUDDataRowAdded::class);
     }
 }

@@ -7,6 +7,7 @@ use App\Http\Controllers\SuhuController;
 use App\Http\Controllers\FreezController;
 use App\Http\Controllers\MetalController;
 use App\Http\Controllers\ColdTemController;
+use App\Http\Controllers\SuhuAirController;
 use App\Http\Controllers\TempSuhuController;
 use App\Http\Controllers\TestMetalController;
 
@@ -52,4 +53,8 @@ Route::get('/export-temperatur-suhu-udang', [TempSuhuController::class, 'exportt
 //test metal detector-> rampung 1
 Route::get("/test-metal-detector", [TestMetalController::class, 'testmetal']);
 Route::get('/export-test-metal', [TestMetalController::class, 'exporttestmetal']);
+
+//pencatatan suhu air-> 
+Route::get("/pencatatan-suhu-air", [SuhuAirController::class, 'suhuair']);
+Route::get('/export-suhu-air', [SuhuAirController::class, 'exportsuhuair']);
 

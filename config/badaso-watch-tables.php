@@ -14,6 +14,7 @@ return [
     'metal_detector',
     'monitoring_metal_detector',
     'pegawai',
+    'pencatatan_suhu_air',
     'pencatatan_suhu_udang',
     'pencucian',
     'penerimaan_dalam',
