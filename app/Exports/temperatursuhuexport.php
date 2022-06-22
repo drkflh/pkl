@@ -44,9 +44,11 @@ class temperatursuhuexport implements FromCollection, WithMapping, WithHeadings,
 
         return [
 
-            'D' => 10,
-
-            'C' => 18
+            'D' => 18,
+            'A' => 13,
+            'C' => 18,
+            'E' => 18,
+            'F' => 18,
 
         ];
 
@@ -439,10 +441,10 @@ class temperatursuhuexport implements FromCollection, WithMapping, WithHeadings,
 
             ['', 'Temperature Suhu Udang'],
 
-            ['', ''],
-
+            ['', ''],   
             ['Bulan', ''],
             ['Tanggal', 'Raw Material', 'Potong Kepala', 'Sortir', 'Koreksi', 'Susun'],
+            
             ['', '07.00', '09.00', '11.00', '13.00', '15.00'],
 
 
@@ -481,7 +483,7 @@ class temperatursuhuexport implements FromCollection, WithMapping, WithHeadings,
 
         $drawing->setPath(public_path('/kapal.png'));
 
-        $drawing->setHeight(120);
+        $drawing->setHeight(85);
 
         $drawing->setCoordinates('A1');
 

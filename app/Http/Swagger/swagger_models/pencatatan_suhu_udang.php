@@ -58,7 +58,7 @@
   *                 @OA\Property(
   *                     property="data",
   *                     type="object",
-  *                     example={"tanggalJam":"2021-01-01T00:00:00.000Z", "suhu":"123", "action":"Abc", "idPegawai":"", "catatan":"Abc"},
+  *                     example={"tanggalJam":"2021-01-01T00:00:00.000Z", "suhu":"123", "action":"Abc", "idPegawai":"Abc", "catatan":"Abc"},
   *                 ),
   *             )
   *         )
@@ -88,7 +88,7 @@
   *                 @OA\Property(
   *                     property="data",
   *                     type="object",
-  *                     example={"tanggalJam":"2021-01-01T00:00:00.000Z", "suhu":"123", "action":"Abc", "idPegawai":"", "catatan":"Abc"},
+  *                     example={"tanggalJam":"2021-01-01T00:00:00.000Z", "suhu":"123", "action":"Abc", "idPegawai":"Abc", "catatan":"Abc"},
   *                ),
   *             )
   *         )
@@ -201,7 +201,7 @@
   *                 @OA\Property(
   *                     property="data",
   *                     type="array",
-  *                     example={{"id":"123", "tanggalJam":"2021-01-01T00:00:00.000Z", "suhu":"123", "action":"Abc", "idPegawai":"", "catatan":"Abc", "createdAt":"2021-01-01T00:00:00.000Z", "updatedAt":"2021-01-01T00:00:00.000Z"}, {"id":"123", "tanggalJam":"2021-01-01T00:00:00.000Z", "suhu":"123", "action":"Abc", "idPegawai":"", "catatan":"Abc", "createdAt":"2021-01-01T00:00:00.000Z", "updatedAt":"2021-01-01T00:00:00.000Z"}},
+  *                     example={{"id":"123", "tanggalJam":"2021-01-01T00:00:00.000Z", "suhu":"123", "action":"Abc", "idPegawai":"Abc", "catatan":"Abc", "createdAt":"2021-01-01T00:00:00.000Z", "updatedAt":"2021-01-01T00:00:00.000Z"}, {"id":"123", "tanggalJam":"2021-01-01T00:00:00.000Z", "suhu":"123", "action":"Abc", "idPegawai":"Abc", "catatan":"Abc", "createdAt":"2021-01-01T00:00:00.000Z", "updatedAt":"2021-01-01T00:00:00.000Z"}},
   *                     @OA\Items(
   *                         type="object",
   *                         @OA\Property(type="integer", property="id"), 

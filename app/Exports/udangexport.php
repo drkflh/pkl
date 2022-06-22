@@ -49,7 +49,7 @@ class udangexport implements FromCollection, WithMapping, WithHeadings, ShouldAu
         return [
 
             'D' => 10,
-
+            'A' => 13,
             'C' => 15
 
         ];
@@ -360,7 +360,7 @@ class udangexport implements FromCollection, WithMapping, WithHeadings, ShouldAu
 
         $drawing->setPath(public_path('/kapal.png'));
 
-        $drawing->setHeight(120);
+        $drawing->setHeight(95);
 
         $drawing->setCoordinates('A1');
 

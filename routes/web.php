@@ -43,10 +43,10 @@ Route::get("/cold-sotrage-temperatur-log", [ColdTemController::class, 'temp']);
 Route::get('/export-cold-storage-temperatur-log', [ColdTemController::class, 'exporttemp']);
 
 //freezing monitoring -> rampung 1
-Route::get("/freezing-monitoring", [FreezController::class, 'freez']);
+Route::get("/freezing-monitoring-record", [FreezController::class, 'freez']);
 Route::get('/export-freezing-monitoring', [FreezController::class, 'exportfreezing']);
 
-//temperatur suhu udang -> rampung 1
+//temperatur suhu udang -> rampung 1-> JAM 11-15 RUNG DDI
 Route::get("/temperatur-suhu-udang", [TempSuhuController::class, 'tempsuhu']);
 Route::get('/export-temperatur-suhu-udang', [TempSuhuController::class, 'exporttempsuhu']);
 

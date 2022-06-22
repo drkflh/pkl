@@ -44,7 +44,7 @@ class coldexport implements FromCollection, WithMapping, WithHeadings, ShouldAut
         return [
 
             'D' => 10,
-
+            'A' => 20,
             'C' => 15
 
         ];
@@ -94,6 +94,11 @@ class coldexport implements FromCollection, WithMapping, WithHeadings, ShouldAut
                     ->setHorizontal(\PhpOffice\PhpSpreadsheet\Style\Alignment::HORIZONTAL_CENTER);
 
                 $event->sheet->getDelegate()->getStyle('D1:D4')
+
+                    ->getAlignment()
+
+                    ->setHorizontal(\PhpOffice\PhpSpreadsheet\Style\Alignment::HORIZONTAL_CENTER);
+                $event->sheet->getDelegate()->getStyle('A10:B10')
 
                     ->getAlignment()
 
@@ -353,7 +358,7 @@ class coldexport implements FromCollection, WithMapping, WithHeadings, ShouldAut
 
         $drawing->setPath(public_path('/kapal.png'));
 
-        $drawing->setHeight(120);
+        $drawing->setHeight(95);
 
         $drawing->setCoordinates('A1');
 

@@ -43,7 +43,7 @@ class suhuairexport implements FromCollection, WithMapping, WithHeadings, Should
     {
 
         return [
-
+            'A' => 13,
             'D' => 20,
             'E' =>15,
             'C' => 15,
@@ -397,7 +397,7 @@ class suhuairexport implements FromCollection, WithMapping, WithHeadings, Should
 
         $drawing->setPath(public_path('/kapal.png'));
 
-        $drawing->setHeight(120);
+        $drawing->setHeight(95);
 
         $drawing->setCoordinates('A1');
 

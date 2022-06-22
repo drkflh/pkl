@@ -50,8 +50,8 @@ class BadasoDeploymentOrchestratorSeeder extends Seeder
         $this->seed(PenerimaanDalamCRUDDataRowAdded::class);
         $this->seed(PenerimaanLuarCRUDDataTypeAdded::class);
         $this->seed(PenerimaanLuarCRUDDataRowAdded::class);
-        $this->seed(PencatatanSuhuUdangCRUDDataTypeAdded::class);
-        $this->seed(PencatatanSuhuUdangCRUDDataRowAdded::class);
+        
+        
         $this->seed(ShippingDalamCRUDDataTypeAdded::class);
         $this->seed(ShippingDalamCRUDDataRowAdded::class);
         $this->seed(StuffingCRUDDataTypeAdded::class);
@@ -83,5 +83,8 @@ class BadasoDeploymentOrchestratorSeeder extends Seeder
         $this->seed(TemperatureSuhuUdangCRUDDataRowAdded::class);
         $this->seed(PencatatanSuhuAirCRUDDataTypeAdded::class);
         $this->seed(PencatatanSuhuAirCRUDDataRowAdded::class);
+        $this->seed(PencatatanSuhuUdangCRUDDataDeleted::class);
+        $this->seed(PencatatanSuhuUdangCRUDDataTypeAdded::class);
+        $this->seed(PencatatanSuhuUdangCRUDDataRowAdded::class);
     }
 }

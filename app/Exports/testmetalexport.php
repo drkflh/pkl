@@ -44,7 +44,7 @@ class testmetalexport implements FromCollection, WithMapping, WithHeadings, Shou
         return [
 
             'D' => 10,
-
+            'A' => 13,
             'C' => 15
 
         ];
@@ -94,6 +94,11 @@ class testmetalexport implements FromCollection, WithMapping, WithHeadings, Shou
                     ->setHorizontal(\PhpOffice\PhpSpreadsheet\Style\Alignment::HORIZONTAL_CENTER);
 
                 $event->sheet->getDelegate()->getStyle('D1:D4')
+
+                    ->getAlignment()
+
+                    ->setHorizontal(\PhpOffice\PhpSpreadsheet\Style\Alignment::HORIZONTAL_CENTER);
+                $event->sheet->getDelegate()->getStyle('A10:C10')
 
                     ->getAlignment()
 
@@ -280,6 +285,7 @@ class testmetalexport implements FromCollection, WithMapping, WithHeadings, Shou
         return [
 
             'B6' => ['font' => ['bold' => true]],
+            'A10:C10' => ['font' => ['bold' => true]],
 
 
 
@@ -316,8 +322,6 @@ class testmetalexport implements FromCollection, WithMapping, WithHeadings, Shou
             ['', 'TEST METAL DETECTOR'],
 
             ['', ''],
-
-            [''],
 
             ['Date', ''],
             ['Waktu', 'Sebelum Dioperasikan', 'Result'],
@@ -356,7 +360,7 @@ class testmetalexport implements FromCollection, WithMapping, WithHeadings, Shou
 
         $drawing->setPath(public_path('/kapal.png'));
 
-        $drawing->setHeight(120);
+        $drawing->setHeight(95);
 
         $drawing->setCoordinates('A1');
 

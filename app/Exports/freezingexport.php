@@ -44,7 +44,7 @@ class freezingexport implements FromCollection, WithMapping, WithHeadings, Shoul
         return [
 
             'D' => 25,
-
+            'A' => 13,
             'C' => 15
 
         ];
@@ -94,6 +94,11 @@ class freezingexport implements FromCollection, WithMapping, WithHeadings, Shoul
                     ->setHorizontal(\PhpOffice\PhpSpreadsheet\Style\Alignment::HORIZONTAL_CENTER);
 
                 $event->sheet->getDelegate()->getStyle('D1:D4')
+
+                    ->getAlignment()
+
+                    ->setHorizontal(\PhpOffice\PhpSpreadsheet\Style\Alignment::HORIZONTAL_CENTER);
+                $event->sheet->getDelegate()->getStyle('A9:I9')
 
                     ->getAlignment()
 
@@ -276,6 +281,7 @@ class freezingexport implements FromCollection, WithMapping, WithHeadings, Shoul
         return [
 
             'B6' => ['font' => ['bold' => true]],
+            'A9:I9' => ['font' => ['bold' => true]],
 
 
 
@@ -356,7 +362,7 @@ class freezingexport implements FromCollection, WithMapping, WithHeadings, Shoul
 
         $drawing->setPath(public_path('/kapal.png'));
 
-        $drawing->setHeight(120);
+        $drawing->setHeight(95);
 
         $drawing->setCoordinates('A1');
 

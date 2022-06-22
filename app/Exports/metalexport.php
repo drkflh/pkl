@@ -44,7 +44,7 @@ class metalexport implements FromCollection, WithMapping, WithHeadings, ShouldAu
         return [
 
             'D' => 15,
-
+            'A' => 13,
             'C' => 15,
             'E' => 15
 
@@ -384,7 +384,7 @@ class metalexport implements FromCollection, WithMapping, WithHeadings, ShouldAu
 
         $drawing->setPath(public_path('/kapal.png'));
 
-        $drawing->setHeight(120);
+        $drawing->setHeight(95);
 
         $drawing->setCoordinates('A1');
 

@@ -44,7 +44,7 @@ class coldtemexport implements FromCollection, WithMapping, WithHeadings, Should
         return [
 
             'D' => 20,
-
+            'A' => 17,
             'C' => 20
 
         ];
@@ -94,6 +94,11 @@ class coldtemexport implements FromCollection, WithMapping, WithHeadings, Should
                     ->setHorizontal(\PhpOffice\PhpSpreadsheet\Style\Alignment::HORIZONTAL_CENTER);
 
                 $event->sheet->getDelegate()->getStyle('D1:D4')
+
+                    ->getAlignment()
+
+                    ->setHorizontal(\PhpOffice\PhpSpreadsheet\Style\Alignment::HORIZONTAL_CENTER);
+                $event->sheet->getDelegate()->getStyle('A10:D10')
 
                     ->getAlignment()
 
@@ -280,6 +285,7 @@ class coldtemexport implements FromCollection, WithMapping, WithHeadings, Should
         return [
 
             'B6' => ['font' => ['bold' => true]],
+            'A10:D10' => ['font' => ['bold' => true]],
 
 
 
@@ -334,11 +340,10 @@ class coldtemexport implements FromCollection, WithMapping, WithHeadings, Should
     {
 
         return [
-            $cold_storage_temperature->no,
-            $cold_storage_temperature->tanggal_jam,
-            $cold_storage_temperature->temperatur,
-            $cold_storage_temperature->action,
-            $cold_storage_temperature->catatan,
+            $cold_storage_temperature->tanggal,
+            $cold_storage_temperature->temperatur_reading,
+            $cold_storage_temperature->corrective_action,
+            $cold_storage_temperature->inspector_initial,
 
 
         ];
@@ -357,7 +362,7 @@ class coldtemexport implements FromCollection, WithMapping, WithHeadings, Should
 
         $drawing->setPath(public_path('/kapal.png'));
 
-        $drawing->setHeight(120);
+        $drawing->setHeight(95);
 
         $drawing->setCoordinates('A1');
 

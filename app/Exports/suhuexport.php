@@ -42,7 +42,7 @@ class suhuexport implements FromCollection, WithMapping, WithHeadings, ShouldAut
     {
 
         return [
-
+            'A' => 13,
             'D' => 20,
             'E' =>15,
             'C' => 15
@@ -94,6 +94,11 @@ class suhuexport implements FromCollection, WithMapping, WithHeadings, ShouldAut
                     ->setHorizontal(\PhpOffice\PhpSpreadsheet\Style\Alignment::HORIZONTAL_CENTER);
 
                 $event->sheet->getDelegate()->getStyle('D1:D4')
+
+                    ->getAlignment()
+
+                    ->setHorizontal(\PhpOffice\PhpSpreadsheet\Style\Alignment::HORIZONTAL_CENTER);
+                $event->sheet->getDelegate()->getStyle('A10:E10')
 
                     ->getAlignment()
 
@@ -374,7 +379,7 @@ class suhuexport implements FromCollection, WithMapping, WithHeadings, ShouldAut
 
         $drawing->setPath(public_path('/kapal.png'));
 
-        $drawing->setHeight(120);
+        $drawing->setHeight(95);
 
         $drawing->setCoordinates('A1');
 

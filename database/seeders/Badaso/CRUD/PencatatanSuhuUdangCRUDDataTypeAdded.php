@@ -28,6 +28,7 @@ class PencatatanSuhuUdangCRUDDataTypeAdded extends Seeder
             }
 
             \DB::table('badaso_data_types')->insert(array (
+                'id' => 34,
                 'name' => 'pencatatan_suhu_udang',
                 'slug' => 'pencatatan-suhu-udang',
                 'display_name_singular' => 'Pencatatan Suhu Udang',
@@ -41,13 +42,13 @@ class PencatatanSuhuUdangCRUDDataTypeAdded extends Seeder
                 'order_direction' => NULL,
                 'generate_permissions' => true,
                 'server_side' => false,
+                'is_maintenance' => 0,
                 'description' => NULL,
                 'details' => NULL,
                 'notification' => '[]',
                 'is_soft_delete' => false,
-                'updated_at' => '2022-05-11T14:26:05.000000Z',
-                'created_at' => '2022-05-11T14:26:05.000000Z',
-                'id' => 17,
+                'created_at' => '2022-06-22T04:38:20.000000Z',
+                'updated_at' => '2022-06-22T04:39:09.000000Z',
             ));
 
             Badaso::model('Permission')->generateFor('pencatatan_suhu_udang');
