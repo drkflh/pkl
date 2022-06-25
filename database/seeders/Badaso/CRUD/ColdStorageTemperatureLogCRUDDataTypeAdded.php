@@ -45,9 +45,9 @@ class ColdStorageTemperatureLogCRUDDataTypeAdded extends Seeder
                 'details' => NULL,
                 'notification' => '[]',
                 'is_soft_delete' => false,
-                'updated_at' => '2022-06-14T05:12:13.000000Z',
-                'created_at' => '2022-06-14T05:12:13.000000Z',
-                'id' => 31,
+                'updated_at' => '2022-06-25T04:36:51.000000Z',
+                'created_at' => '2022-06-25T04:36:51.000000Z',
+                'id' => 35,
             ));
 
             Badaso::model('Permission')->generateFor('cold_storage_temperature_log');

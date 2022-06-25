@@ -58,7 +58,7 @@
   *                 @OA\Property(
   *                     property="data",
   *                     type="object",
-  *                     example={"tanggal":"Abc", "temperaturReading":"Abc", "correctiveAction":"Abc", "inspectorInitial":"Abc"},
+  *                     example={"tanggal":"Abc", "temperaturReading":"Abc", "temperaturReadingDua":"Abc", "temperaturReadingEmpat":"Abc", "temperaturReadingEnam":"Abc", "temperaturReadingDelapan":"Abc", "temperaturReadingSepuluh":"Abc", "temperaturReadingDuabelas":"Abc", "temperaturReadingEmpatbelas":"Abc", "temperaturReadingEnambelas":"Abc", "temperaturReadingDelapanbelas":"Abc", "temperaturReadingDuapuluh":"Abc", "temperaturReadingDuadua":"Abc", "correctiveAction":"Abc", "inspectorInitial":"Abc"},
   *                 ),
   *             )
   *         )
@@ -88,7 +88,7 @@
   *                 @OA\Property(
   *                     property="data",
   *                     type="object",
-  *                     example={"tanggal":"Abc", "temperaturReading":"Abc", "correctiveAction":"Abc", "inspectorInitial":"Abc"},
+  *                     example={"tanggal":"Abc", "temperaturReading":"Abc", "temperaturReadingDua":"Abc", "temperaturReadingEmpat":"Abc", "temperaturReadingEnam":"Abc", "temperaturReadingDelapan":"Abc", "temperaturReadingSepuluh":"Abc", "temperaturReadingDuabelas":"Abc", "temperaturReadingEmpatbelas":"Abc", "temperaturReadingEnambelas":"Abc", "temperaturReadingDelapanbelas":"Abc", "temperaturReadingDuapuluh":"Abc", "temperaturReadingDuadua":"Abc", "correctiveAction":"Abc", "inspectorInitial":"Abc"},
   *                ),
   *             )
   *         )
@@ -201,16 +201,27 @@
   *                 @OA\Property(
   *                     property="data",
   *                     type="array",
-  *                     example={{"id":"123", "tanggal":"Abc", "temperaturReading":"Abc", "correctiveAction":"Abc", "inspectorInitial":"Abc", "createdAt":"2021-01-01T00:00:00.000Z", "updatedAt":"2021-01-01T00:00:00.000Z"}, {"id":"123", "tanggal":"Abc", "temperaturReading":"Abc", "correctiveAction":"Abc", "inspectorInitial":"Abc", "createdAt":"2021-01-01T00:00:00.000Z", "updatedAt":"2021-01-01T00:00:00.000Z"}},
+  *                     example={{"id":"123", "tanggal":"Abc", "temperaturReading":"Abc", "createdAt":"2021-01-01T00:00:00.000Z", "updatedAt":"2021-01-01T00:00:00.000Z", "temperaturReadingDua":"Abc", "temperaturReadingEmpat":"Abc", "temperaturReadingEnam":"Abc", "temperaturReadingDelapan":"Abc", "temperaturReadingSepuluh":"Abc", "temperaturReadingDuabelas":"Abc", "temperaturReadingEmpatbelas":"Abc", "temperaturReadingEnambelas":"Abc", "temperaturReadingDelapanbelas":"Abc", "temperaturReadingDuapuluh":"Abc", "temperaturReadingDuadua":"Abc", "correctiveAction":"Abc", "inspectorInitial":"Abc"}, {"id":"123", "tanggal":"Abc", "temperaturReading":"Abc", "createdAt":"2021-01-01T00:00:00.000Z", "updatedAt":"2021-01-01T00:00:00.000Z", "temperaturReadingDua":"Abc", "temperaturReadingEmpat":"Abc", "temperaturReadingEnam":"Abc", "temperaturReadingDelapan":"Abc", "temperaturReadingSepuluh":"Abc", "temperaturReadingDuabelas":"Abc", "temperaturReadingEmpatbelas":"Abc", "temperaturReadingEnambelas":"Abc", "temperaturReadingDelapanbelas":"Abc", "temperaturReadingDuapuluh":"Abc", "temperaturReadingDuadua":"Abc", "correctiveAction":"Abc", "inspectorInitial":"Abc"}},
   *                     @OA\Items(
   *                         type="object",
   *                         @OA\Property(type="integer", property="id"), 
   *                         @OA\Property(type="string", property="tanggal"), 
   *                         @OA\Property(type="string", property="temperaturReading"), 
-  *                         @OA\Property(type="string", property="correctiveAction"), 
-  *                         @OA\Property(type="string", property="inspectorInitial"), 
   *                         @OA\Property(type="string", property="createdAt"), 
-  *                         @OA\Property(type="string", property="updatedAt"),
+  *                         @OA\Property(type="string", property="updatedAt"), 
+  *                         @OA\Property(type="string", property="temperaturReadingDua"), 
+  *                         @OA\Property(type="string", property="temperaturReadingEmpat"), 
+  *                         @OA\Property(type="string", property="temperaturReadingEnam"), 
+  *                         @OA\Property(type="string", property="temperaturReadingDelapan"), 
+  *                         @OA\Property(type="string", property="temperaturReadingSepuluh"), 
+  *                         @OA\Property(type="string", property="temperaturReadingDuabelas"), 
+  *                         @OA\Property(type="string", property="temperaturReadingEmpatbelas"), 
+  *                         @OA\Property(type="string", property="temperaturReadingEnambelas"), 
+  *                         @OA\Property(type="string", property="temperaturReadingDelapanbelas"), 
+  *                         @OA\Property(type="string", property="temperaturReadingDuapuluh"), 
+  *                         @OA\Property(type="string", property="temperaturReadingDuadua"), 
+  *                         @OA\Property(type="string", property="correctiveAction"), 
+  *                         @OA\Property(type="string", property="inspectorInitial"),
   *                     ),
   *                ),
   *             )

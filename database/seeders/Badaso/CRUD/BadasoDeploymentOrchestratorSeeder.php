@@ -77,8 +77,8 @@ class BadasoDeploymentOrchestratorSeeder extends Seeder
         $this->seed(FreezingMonitoringRecordCRUDDataRowAdded::class);
         $this->seed(TestMetalDetectorCRUDDataTypeAdded::class);
         $this->seed(TestMetalDetectorCRUDDataRowAdded::class);
-        $this->seed(ColdStorageTemperatureLogCRUDDataTypeAdded::class);
-        $this->seed(ColdStorageTemperatureLogCRUDDataRowAdded::class);
+        
+        
         $this->seed(TemperatureSuhuUdangCRUDDataTypeAdded::class);
         $this->seed(TemperatureSuhuUdangCRUDDataRowAdded::class);
         $this->seed(PencatatanSuhuAirCRUDDataTypeAdded::class);
@@ -86,5 +86,8 @@ class BadasoDeploymentOrchestratorSeeder extends Seeder
         $this->seed(PencatatanSuhuUdangCRUDDataDeleted::class);
         $this->seed(PencatatanSuhuUdangCRUDDataTypeAdded::class);
         $this->seed(PencatatanSuhuUdangCRUDDataRowAdded::class);
+        $this->seed(ColdStorageTemperatureLogCRUDDataDeleted::class);
+        $this->seed(ColdStorageTemperatureLogCRUDDataTypeAdded::class);
+        $this->seed(ColdStorageTemperatureLogCRUDDataRowAdded::class);
     }
 }

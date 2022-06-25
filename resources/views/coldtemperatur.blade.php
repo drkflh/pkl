@@ -48,7 +48,18 @@
 								<thead>
                 <tr class="text-center">
                     <th>Date</th>
-                    <th>Time/Temperature Reading</th>
+                    <th>00</th>
+                    <th>02</th>
+                    <th>04</th>
+                    <th>06</th>
+                    <th>08</th>
+                    <th>10</th>
+                    <th>12</th>
+                    <th>14</th>
+                    <th>16</th>
+                    <th>18</th>
+                    <th>20</th>
+                    <th>22</th>
                     <th>Correction Action</th>
                     <th>Inspector Initial</th>
                 </tr>
@@ -59,6 +70,17 @@
                       <tr class="text-center">
                     <td>{{ $item ->tanggal}}</td>
                     <td>{{ $item ->temperatur_reading}}</td>
+                    <td>{{ $item ->temperatur_reading_dua}}</td>
+                    <td>{{ $item ->temperatur_reading_empat}}</td>
+                    <td>{{ $item ->temperatur_reading_enam}}</td>
+                    <td>{{ $item ->temperatur_reading_delapan}}</td>
+                    <td>{{ $item ->temperatur_reading_sepuluh}}</td>
+                    <td>{{ $item ->temperatur_reading_duabelas}}</td>
+                    <td>{{ $item ->temperatur_reading_empatbelas}}</td>
+                    <td>{{ $item ->temperatur_reading_enambelas}}</td>
+                    <td>{{ $item ->temperatur_reading_delapanbelas}}</td>
+                    <td>{{ $item ->temperatur_reading_duapuluh}}</td>
+                    <td>{{ $item ->temperatur_reading_duadua}}</td>
                     <td>{{ $item ->corrective_action}}</td>
                     <td>{{ $item ->inspector_initial}}</td>
                 </tr>

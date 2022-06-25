@@ -98,7 +98,7 @@ class testmetalexport implements FromCollection, WithMapping, WithHeadings, Shou
                     ->getAlignment()
 
                     ->setHorizontal(\PhpOffice\PhpSpreadsheet\Style\Alignment::HORIZONTAL_CENTER);
-                $event->sheet->getDelegate()->getStyle('A10:C10')
+                $event->sheet->getDelegate()->getStyle('A9:C9')
 
                     ->getAlignment()
 
@@ -285,7 +285,7 @@ class testmetalexport implements FromCollection, WithMapping, WithHeadings, Shou
         return [
 
             'B6' => ['font' => ['bold' => true]],
-            'A10:C10' => ['font' => ['bold' => true]],
+            'A9:C9' => ['font' => ['bold' => true]],
 
 
 

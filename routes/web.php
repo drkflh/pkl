@@ -38,7 +38,7 @@ Route::get('/export-cold-storgae', [ColdController::class, 'exportcold']);
 Route::get("/pencatatan-suhu-udang", [SuhuController::class, 'suhu']);
 Route::get('/export-suhu-udang', [SuhuController::class, 'exportsuhu']);
 
-//cold storage temperatur -> rampung krng sng ngisor time reading 1
+//cold storage temperatur -> rampung 
 Route::get("/cold-sotrage-temperatur-log", [ColdTemController::class, 'temp']);
 Route::get('/export-cold-storage-temperatur-log', [ColdTemController::class, 'exporttemp']);
 
