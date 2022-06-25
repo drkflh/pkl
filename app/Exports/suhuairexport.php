@@ -107,7 +107,7 @@ class suhuairexport implements FromCollection, WithMapping, WithHeadings, Should
                     ->getAlignment()
 
                     ->setHorizontal(\PhpOffice\PhpSpreadsheet\Style\Alignment::HORIZONTAL_CENTER);
-                $event->sheet->getDelegate()->getStyle('A10:M10')
+                $event->sheet->getDelegate()->getStyle('A10:I10')
                 
                     ->getAlignment()
                     ->setHorizontal(\PhpOffice\PhpSpreadsheet\Style\Alignment::HORIZONTAL_CENTER);
