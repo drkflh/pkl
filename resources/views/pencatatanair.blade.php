@@ -50,13 +50,9 @@
                     <th class="text-center" width="100px">Tanggal</th>
                     <th class="text-center">Hari</th>
                     <th class="text-center">08.00</th>
-                    <th class="text-center">Suhu</th>
                     <th class="text-center">10.00</th>
-                    <th class="text-center">Suhu</th>
                     <th class="text-center">12.00</th>
-                    <th class="text-center">Suhu</th>
                     <th class="text-center">14.00</th>
-                    <th class="text-center">Suhu</th>
                     <th class="text-center">Acon</th>
                     <th class="text-center">Nama</th>
                     <th class="text-center">Paraf</th>
@@ -69,13 +65,9 @@
                     <td class="text-center">{{ $item ->tanggal}}</td>
                     <td class="text-center">{{ $item ->hari}}</td>
                     <td class="text-center">{{ $item ->delapan}}</td>
-                    <td class="text-center">{{ $item ->suhu1}}</td>
                     <td class="text-center">{{ $item ->sepuluh}}</td>
-                    <td class="text-center">{{ $item ->suhu2}}</td>
                     <td class="text-center">{{ $item ->duabelas}}</td>
-                    <td class="text-center">{{ $item ->suhu3}}</td>
                     <td class="text-center">{{ $item ->empatbelas}}</td>
-                    <td class="text-center">{{ $item ->suhu4}}</td>
                     <td class="text-center">{{ $item ->acon}}</td>
                     <td class="text-center">{{ $item ->nama_pegawai}}</td>
                     <td class="text-center">{{ $item ->paraf}}</td>

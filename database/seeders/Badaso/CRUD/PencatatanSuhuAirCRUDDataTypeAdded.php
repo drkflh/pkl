@@ -28,7 +28,6 @@ class PencatatanSuhuAirCRUDDataTypeAdded extends Seeder
             }
 
             \DB::table('badaso_data_types')->insert(array (
-                'id' => 33,
                 'name' => 'pencatatan_suhu_air',
                 'slug' => 'pencatatan-suhu-air',
                 'display_name_singular' => 'Pencatatan Suhu Air',
@@ -42,13 +41,13 @@ class PencatatanSuhuAirCRUDDataTypeAdded extends Seeder
                 'order_direction' => NULL,
                 'generate_permissions' => true,
                 'server_side' => false,
-                'is_maintenance' => 0,
                 'description' => NULL,
                 'details' => NULL,
                 'notification' => '[]',
                 'is_soft_delete' => false,
-                'created_at' => '2022-06-20T07:28:58.000000Z',
-                'updated_at' => '2022-06-20T07:33:59.000000Z',
+                'updated_at' => '2022-06-25T07:19:38.000000Z',
+                'created_at' => '2022-06-25T07:19:38.000000Z',
+                'id' => 36,
             ));
 
             Badaso::model('Permission')->generateFor('pencatatan_suhu_air');

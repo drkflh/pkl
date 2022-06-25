@@ -58,7 +58,7 @@
   *                 @OA\Property(
   *                     property="data",
   *                     type="object",
-  *                     example={"tanggal":"Abc", "hari":"2021-01-01T00:00:00.000Z", "delapan":"Abc", "suhu1":"Abc", "sepuluh":"Abc", "suhu2":"Abc", "duabelas":"Abc", "suhu3":"Abc", "empatbelas":"Abc", "suhu4":"Abc", "acon":"Abc", "namaPegawai":"Abc", "paraf":"Abc"},
+  *                     example={"tanggal":"Abc", "hari":"2021-01-01T00:00:00.000Z", "delapan":"Abc", "sepuluh":"Abc", "duabelas":"Abc", "empatbelas":"Abc", "acon":"Abc", "namaPegawai":"Abc", "paraf":"Abc"},
   *                 ),
   *             )
   *         )
@@ -88,7 +88,7 @@
   *                 @OA\Property(
   *                     property="data",
   *                     type="object",
-  *                     example={"tanggal":"Abc", "hari":"2021-01-01T00:00:00.000Z", "delapan":"Abc", "suhu1":"Abc", "sepuluh":"Abc", "suhu2":"Abc", "duabelas":"Abc", "suhu3":"Abc", "empatbelas":"Abc", "suhu4":"Abc", "acon":"Abc", "namaPegawai":"Abc", "paraf":"Abc"},
+  *                     example={"tanggal":"Abc", "hari":"2021-01-01T00:00:00.000Z", "delapan":"Abc", "sepuluh":"Abc", "duabelas":"Abc", "empatbelas":"Abc", "acon":"Abc", "namaPegawai":"Abc", "paraf":"Abc"},
   *                ),
   *             )
   *         )
@@ -201,20 +201,16 @@
   *                 @OA\Property(
   *                     property="data",
   *                     type="array",
-  *                     example={{"id":"123", "tanggal":"Abc", "hari":"2021-01-01T00:00:00.000Z", "delapan":"Abc", "suhu1":"Abc", "sepuluh":"Abc", "suhu2":"Abc", "duabelas":"Abc", "suhu3":"Abc", "empatbelas":"Abc", "suhu4":"Abc", "acon":"Abc", "namaPegawai":"Abc", "paraf":"Abc", "createdAt":"2021-01-01T00:00:00.000Z", "updatedAt":"2021-01-01T00:00:00.000Z"}, {"id":"123", "tanggal":"Abc", "hari":"2021-01-01T00:00:00.000Z", "delapan":"Abc", "suhu1":"Abc", "sepuluh":"Abc", "suhu2":"Abc", "duabelas":"Abc", "suhu3":"Abc", "empatbelas":"Abc", "suhu4":"Abc", "acon":"Abc", "namaPegawai":"Abc", "paraf":"Abc", "createdAt":"2021-01-01T00:00:00.000Z", "updatedAt":"2021-01-01T00:00:00.000Z"}},
+  *                     example={{"id":"123", "tanggal":"Abc", "hari":"2021-01-01T00:00:00.000Z", "delapan":"Abc", "sepuluh":"Abc", "duabelas":"Abc", "empatbelas":"Abc", "acon":"Abc", "namaPegawai":"Abc", "paraf":"Abc", "createdAt":"2021-01-01T00:00:00.000Z", "updatedAt":"2021-01-01T00:00:00.000Z"}, {"id":"123", "tanggal":"Abc", "hari":"2021-01-01T00:00:00.000Z", "delapan":"Abc", "sepuluh":"Abc", "duabelas":"Abc", "empatbelas":"Abc", "acon":"Abc", "namaPegawai":"Abc", "paraf":"Abc", "createdAt":"2021-01-01T00:00:00.000Z", "updatedAt":"2021-01-01T00:00:00.000Z"}},
   *                     @OA\Items(
   *                         type="object",
   *                         @OA\Property(type="integer", property="id"), 
   *                         @OA\Property(type="string", property="tanggal"), 
   *                         @OA\Property(type="string", property="hari"), 
   *                         @OA\Property(type="string", property="delapan"), 
-  *                         @OA\Property(type="string", property="suhu1"), 
   *                         @OA\Property(type="string", property="sepuluh"), 
-  *                         @OA\Property(type="string", property="suhu2"), 
   *                         @OA\Property(type="string", property="duabelas"), 
-  *                         @OA\Property(type="string", property="suhu3"), 
   *                         @OA\Property(type="string", property="empatbelas"), 
-  *                         @OA\Property(type="string", property="suhu4"), 
   *                         @OA\Property(type="string", property="acon"), 
   *                         @OA\Property(type="string", property="namaPegawai"), 
   *                         @OA\Property(type="string", property="paraf"), 

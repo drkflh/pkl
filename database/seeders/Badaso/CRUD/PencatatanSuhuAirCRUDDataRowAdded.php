@@ -90,9 +90,9 @@ class PencatatanSuhuAirCRUDDataRowAdded extends Seeder
                 4 => 
                 array (
                     'data_type_id' => $data_type->id,
-                    'field' => 'suhu1',
+                    'field' => 'sepuluh',
                     'type' => 'text',
-                    'display_name' => 'Suhu',
+                    'display_name' => '10.00',
                     'required' => 1,
                     'browse' => 1,
                     'read' => 1,
@@ -106,9 +106,9 @@ class PencatatanSuhuAirCRUDDataRowAdded extends Seeder
                 5 => 
                 array (
                     'data_type_id' => $data_type->id,
-                    'field' => 'sepuluh',
+                    'field' => 'duabelas',
                     'type' => 'text',
-                    'display_name' => '10.00',
+                    'display_name' => '12.00',
                     'required' => 1,
                     'browse' => 1,
                     'read' => 1,
@@ -122,9 +122,9 @@ class PencatatanSuhuAirCRUDDataRowAdded extends Seeder
                 6 => 
                 array (
                     'data_type_id' => $data_type->id,
-                    'field' => 'suhu2',
+                    'field' => 'empatbelas',
                     'type' => 'text',
-                    'display_name' => 'Suhu',
+                    'display_name' => '14.00',
                     'required' => 1,
                     'browse' => 1,
                     'read' => 1,
@@ -138,9 +138,9 @@ class PencatatanSuhuAirCRUDDataRowAdded extends Seeder
                 7 => 
                 array (
                     'data_type_id' => $data_type->id,
-                    'field' => 'duabelas',
+                    'field' => 'acon',
                     'type' => 'text',
-                    'display_name' => '12.00',
+                    'display_name' => 'Acon',
                     'required' => 1,
                     'browse' => 1,
                     'read' => 1,
@@ -154,9 +154,9 @@ class PencatatanSuhuAirCRUDDataRowAdded extends Seeder
                 8 => 
                 array (
                     'data_type_id' => $data_type->id,
-                    'field' => 'suhu3',
+                    'field' => 'nama_pegawai',
                     'type' => 'text',
-                    'display_name' => 'suhu',
+                    'display_name' => 'Nama Pegawai',
                     'required' => 1,
                     'browse' => 1,
                     'read' => 1,
@@ -170,9 +170,9 @@ class PencatatanSuhuAirCRUDDataRowAdded extends Seeder
                 9 => 
                 array (
                     'data_type_id' => $data_type->id,
-                    'field' => 'empatbelas',
+                    'field' => 'paraf',
                     'type' => 'text',
-                    'display_name' => '14.00',
+                    'display_name' => 'Paraf',
                     'required' => 1,
                     'browse' => 1,
                     'read' => 1,
@@ -186,70 +186,6 @@ class PencatatanSuhuAirCRUDDataRowAdded extends Seeder
                 10 => 
                 array (
                     'data_type_id' => $data_type->id,
-                    'field' => 'suhu4',
-                    'type' => 'text',
-                    'display_name' => 'Suhu',
-                    'required' => 1,
-                    'browse' => 1,
-                    'read' => 1,
-                    'edit' => 1,
-                    'add' => 1,
-                    'delete' => 1,
-                    'details' => '{}',
-                    'relation' => NULL,
-                    'order' => 11,
-                ),
-                11 => 
-                array (
-                    'data_type_id' => $data_type->id,
-                    'field' => 'acon',
-                    'type' => 'text',
-                    'display_name' => 'Acon',
-                    'required' => 1,
-                    'browse' => 1,
-                    'read' => 1,
-                    'edit' => 1,
-                    'add' => 1,
-                    'delete' => 1,
-                    'details' => '{}',
-                    'relation' => NULL,
-                    'order' => 12,
-                ),
-                12 => 
-                array (
-                    'data_type_id' => $data_type->id,
-                    'field' => 'nama_pegawai',
-                    'type' => 'text',
-                    'display_name' => 'Nama',
-                    'required' => 1,
-                    'browse' => 1,
-                    'read' => 1,
-                    'edit' => 1,
-                    'add' => 1,
-                    'delete' => 1,
-                    'details' => '{}',
-                    'relation' => NULL,
-                    'order' => 13,
-                ),
-                13 => 
-                array (
-                    'data_type_id' => $data_type->id,
-                    'field' => 'paraf',
-                    'type' => 'text',
-                    'display_name' => 'Paraf',
-                    'required' => 1,
-                    'browse' => 1,
-                    'read' => 1,
-                    'edit' => 1,
-                    'add' => 1,
-                    'delete' => 1,
-                    'details' => '{}',
-                    'relation' => NULL,
-                    'order' => 14,
-                ),
-                14 => 
-                array (
-                    'data_type_id' => $data_type->id,
                     'field' => 'created_at',
                     'type' => 'datetime',
                     'display_name' => 'Created At',
@@ -261,9 +197,9 @@ class PencatatanSuhuAirCRUDDataRowAdded extends Seeder
                     'delete' => 0,
                     'details' => '{}',
                     'relation' => NULL,
-                    'order' => 15,
+                    'order' => 11,
                 ),
-                15 => 
+                11 => 
                 array (
                     'data_type_id' => $data_type->id,
                     'field' => 'updated_at',
@@ -277,7 +213,7 @@ class PencatatanSuhuAirCRUDDataRowAdded extends Seeder
                     'delete' => 0,
                     'details' => '{}',
                     'relation' => NULL,
-                    'order' => 16,
+                    'order' => 12,
                 ),
             ));
 

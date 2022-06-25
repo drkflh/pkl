@@ -352,7 +352,7 @@ class suhuairexport implements FromCollection, WithMapping, WithHeadings, Should
 
             ['Hari', ''],
             ['Tanggal', ''],
-            ['Tanggal','Hari', '08.00','Suhu','10.00','Suhu','12.00','Suhu','14.00','Suhu','Acon','Nama','Paraf'],
+            ['Tanggal','Hari', '08.00','10.00','12.00','14.00','Acon','Nama','Paraf'],
 
 
 
@@ -369,13 +369,9 @@ class suhuairexport implements FromCollection, WithMapping, WithHeadings, Should
             $pencatatan_suhu_air->tanggal,
             $pencatatan_suhu_air->hari,
             $pencatatan_suhu_air->delapan,
-            $pencatatan_suhu_air->suhu1,
             $pencatatan_suhu_air->sepuluh,
-            $pencatatan_suhu_air->suhu2,
             $pencatatan_suhu_air->duabelas,
-            $pencatatan_suhu_air->suhu3,
             $pencatatan_suhu_air->empatbelas,
-            $pencatatan_suhu_air->suhu4,
             $pencatatan_suhu_air->acon,
             $pencatatan_suhu_air->nama_pegawai,
             $pencatatan_suhu_air->paraf,
