@@ -270,7 +270,7 @@ class suhuairexport implements FromCollection, WithMapping, WithHeadings, Should
             ],
 
         ]);
-        $sheet->getStyle('A10:' . 'M10')->applyFromArray([
+        $sheet->getStyle('A10:' . 'I10')->applyFromArray([
 
             'borders' => [
 
