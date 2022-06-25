@@ -51,10 +51,7 @@ class suhuairexport implements FromCollection, WithMapping, WithHeadings, Should
             'G' => 15,
             'H' => 15,
             'I' => 15,
-            'J' => 15,
-            'K' => 15,
-            'L' => 15,
-            'M' => 15,
+
 
         ];
 

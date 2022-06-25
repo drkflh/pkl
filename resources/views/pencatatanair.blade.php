@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 
 
-  <title>Monitoring Metal Detector</title>
+  <title>Pencatatan Suhu Air </title>
 </head>
 
 <body>
