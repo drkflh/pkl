@@ -1,8 +1,9 @@
 <template>
   <div>
     <template v-if="!showMaintenancePage">
-
     <a href="/export-test-metal" class="expbtn">Export Excel</a>
+
+    <p class="hide">space</p>
 
       <badaso-breadcrumb-hover full>
         <template slot="action">
@@ -1188,4 +1189,7 @@ export default {
   .expbtn:hover{
       opacity:0.9;
   }
+  .hide {
+			opacity: 0;
+		}
 </style>

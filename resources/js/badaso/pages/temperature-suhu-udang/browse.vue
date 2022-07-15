@@ -4,6 +4,8 @@
 
     <a href="/export-temperatur-suhu-udang" class="expbtn">Export Excel</a>
 
+    <p class="hide">space</p>
+
       <badaso-breadcrumb-hover full>
         <template slot="action">
           <badaso-dropdown-item
@@ -1188,4 +1190,7 @@ export default {
   .expbtn:hover{
       opacity:0.9;
   }
+  .hide {
+			opacity: 0;
+		}
 </style>
